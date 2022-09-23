@@ -1,0 +1,203 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}bd
+  border: var(#{$variable-prefix}-border-width) var(#{$variable-prefix}-border-style) var(#{$variable-prefix}-border-color)
+
+.#{$class-prefix}bd#{$separator}t
+  border-top: var(#{$variable-prefix}-border-width) var(#{$variable-prefix}-border-style) var(#{$variable-prefix}-border-color)
+
+.#{$class-prefix}bd#{$separator}r
+  border-right: var(#{$variable-prefix}-border-width) var(#{$variable-prefix}-border-style) var(#{$variable-prefix}-border-color)
+
+.#{$class-prefix}bd#{$separator}b
+  border-bottom: var(#{$variable-prefix}-border-width) var(#{$variable-prefix}-border-style) var(#{$variable-prefix}-border-color)
+
+.#{$class-prefix}bd#{$separator}l
+  border-left: var(#{$variable-prefix}-border-width) var(#{$variable-prefix}-border-style) var(#{$variable-prefix}-border-color)
+
+.#{$class-prefix}bd#{$separator}none
+  border-style: none !important
+
+.#{$class-prefix}bd#{$separator}dotted
+  border-style: dotted !important
+
+.#{$class-prefix}bd#{$separator}dashed
+  border-style: dashed !important
+
+.#{$class-prefix}bd#{$separator}solid
+  border-style: solid !important
+
+.#{$class-prefix}bd#{$separator}groove
+  border-style: groove !important
+
+.#{$class-prefix}bd#{$separator}ridge
+  border-style: ridge !important
+
+.#{$class-prefix}bd#{$separator}double
+  border-style: double !important
+
+.#{$class-prefix}bd#{$separator}inset
+  border-style: inset !important
+
+.#{$class-prefix}bd#{$separator}outset
+  border-style: outset !important
+
+@each $color in $color-list
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}
+    border-color: var(#{$variable-prefix}-#{$color})
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}1
+    border-color: var(#{$variable-prefix}-#{$color}-ltn-1)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}2
+    border-color: var(#{$variable-prefix}-#{$color}-ltn-2)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}3
+    border-color: var(#{$variable-prefix}-#{$color}-ltn-3)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}4
+    border-color: var(#{$variable-prefix}-#{$color}-ltn-4)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}1
+    border-color: var(#{$variable-prefix}-#{$color}-dkn-1)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}2
+    border-color: var(#{$variable-prefix}-#{$color}-dkn-2)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}3
+    border-color: var(#{$variable-prefix}-#{$color}-dkn-w)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}4
+    border-color: var(#{$variable-prefix}-#{$color}-dkn-3)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}\:hvr:hover
+    border-color: var(#{$variable-prefix}-#{$color})
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}1\:hvr:hover
+    border-color: var(#{$variable-prefix}-#{$color}-ltn-1)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}2\:hvr:hover
+    border-color: var(#{$variable-prefix}-#{$color}-ltn-2)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}3\:hvr:hover
+    border-color: var(#{$variable-prefix}-#{$color}-ltn-3)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}4\:hvr:hover
+    border-color: var(#{$variable-prefix}-#{$color}-ltn-4)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}1\:hvr:hover
+    border-color: var(#{$variable-prefix}-#{$color}-dkn-1)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}2\:hvr:hover
+    border-color: var(#{$variable-prefix}-#{$color}-dkn-2)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}3\:hvr:hover
+    border-color: var(#{$variable-prefix}-#{$color}-dkn-w)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}4\:hvr:hover
+    border-color: var(#{$variable-prefix}-#{$color}-dkn-4)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}\:fcs:focus
+    border-color: var(#{$variable-prefix}-#{$color})
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}1\:fcs:focus
+    border-color: var(#{$variable-prefix}-#{$color}-ltn-1)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}2\:fcs:focus
+    border-color: var(#{$variable-prefix}-#{$color}-ltn-2)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}3\:fcs:focus
+    border-color: var(#{$variable-prefix}-#{$color}-ltn-3)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}4\:fcs:focus
+    border-color: var(#{$variable-prefix}-#{$color}-ltn-4)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}1\:fcs:focus
+    border-color: var(#{$variable-prefix}-#{$color}-dkn-1)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}2\:fcs:focus
+    border-color: var(#{$variable-prefix}-#{$color}-dkn-2)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}3\:fcs:focus
+    border-color: var(#{$variable-prefix}-#{$color}-dkn-w)
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}4\:fcs:focus
+    border-color: var(#{$variable-prefix}-#{$color}-dkn-3)
+
+@each $color in $brands
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}
+    border-color: var(#{$variable-prefix}-#{$color})
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}\:hvr:hover
+    border-color: var(#{$variable-prefix}-#{$color})
+
+  .#{$class-prefix}bdc#{$separator}#{'' + $color}\:fcs:focus
+    border-color: var(#{$variable-prefix}-#{$color})
+
+@each $i, $value in $border-list
+  .#{$class-prefix}bd#{$separator}#{$i}
+    border-width: $value !important
+
+@each $i, $value in $border-list
+  .#{$class-prefix}bdrds#{$separator}#{$i}
+    border-radius: $value !important
+
+  .#{$class-prefix}bdrds#{$separator}t#{$separator}#{$i}
+    border-top-right-radius: $value !important
+    border-top-left-radius: $value !important
+
+  .#{$class-prefix}bdrds#{$separator}r#{$separator}#{$i}
+    border-top-right-radius: $value !important
+    border-bottom-right-radius: $value !important
+
+  .#{$class-prefix}bdrds#{$separator}b#{$separator}#{$i}
+    border-bottom-right-radius: $value !important
+    border-bottom-left-radius: $value !important
+
+  .#{$class-prefix}bdrds#{$separator}l#{$separator}#{$i}
+    border-top-left-radius: $value !important
+    border-bottom-left-radius: $value !important
+
+  .#{$class-prefix}bdrds#{$separator}t#{$separator}r#{$separator}#{$i}
+    border-top-right-radius: $value !important
+
+  .#{$class-prefix}bdrds#{$separator}t#{$separator}l#{$separator}#{$i}
+    border-top-left-radius: $value !important
+
+  .#{$class-prefix}bdrds#{$separator}b#{$separator}r#{$separator}#{$i}
+    border-bottom-right-radius: $value !important
+
+  .#{$class-prefix}bdrds#{$separator}b#{$separator}l#{$separator}#{$i}
+    border-bottom-left-radius: $value !important
+
+@for $i from 1 through 20
+  .#{$class-prefix}bdrds#{$separator}#{$i * 5}\%
+    border-radius: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}bdrds#{$separator}t#{$separator}#{$i * 5}\%
+    border-top-right-radius: #{$i * 5} + '%' !important
+    border-top-left-radius: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}bdrds#{$separator}r#{$separator}#{$i * 5}\%
+    border-top-right-radius: #{$i * 5} + '%' !important
+    border-bottom-right-radius: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}bdrds#{$separator}b#{$separator}#{$i * 5}\%
+    border-bottom-right-radius: #{$i * 5} + '%' !important
+    border-bottom-left-radius: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}bdrds#{$separator}l#{$separator}#{$i * 5}\%
+    border-top-left-radius: #{$i * 5} + '%' !important
+    border-bottom-left-radius: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}bdrds#{$separator}t#{$separator}r#{$separator}#{$i * 5}\%
+    border-top-right-radius: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}bdrds#{$separator}t#{$separator}l#{$separator}#{$i * 5}\%
+    border-top-left-radius: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}bdrds#{$separator}b#{$separator}r#{$separator}#{$i * 5}\%
+    border-bottom-right-radius: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}bdrds#{$separator}b#{$separator}l#{$separator}#{$i * 5}\%
+    border-bottom-left-radius: #{$i * 5} + '%' !important

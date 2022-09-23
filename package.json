@@ -1,0 +1,33 @@
+{
+  "name": "limpio",
+  "version": "0.1.0",
+  "description": "Awesome SASS Framework",
+  "homepage": "https://limpio.dev",
+  "keywords": [
+    "css",
+    "sass",
+    "resposive",
+    "lightweight",
+    "frontend",
+    "web",
+    "customizable",
+    "flex",
+    "grid"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limpio-dev/limpio.git"
+  },
+  "author": {
+    "name": "limpio-dev",
+    "email": "limpio.dev@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/limpio-dev/limpio/issues"
+  },
+  "sass": "sass/",
+  "main": "dist/css/limpio.css",
+  "unpkg": "dist/css/limpio.css",
+  "style": "dist/css/limpio.css"
+}

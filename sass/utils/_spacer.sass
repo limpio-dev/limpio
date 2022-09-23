@@ -1,0 +1,122 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}spacer#{$separator}7xs
+  margin-bottom: calc(var(#{$variable-prefix}-spacer) - 3rem) !important
+
+.#{$class-prefix}spacer#{$separator}6xs
+  margin-bottom: calc(var(#{$variable-prefix}-spacer) - 2rem) !important
+
+.#{$class-prefix}spacer#{$separator}5xs
+  margin-bottom: calc(var(#{$variable-prefix}-spacer) - 1.5rem) !important
+
+.#{$class-prefix}spacer#{$separator}4xs
+  margin-bottom: calc(var(#{$variable-prefix}-spacer) - 1.25rem) !important
+
+.#{$class-prefix}spacer#{$separator}3xs
+  margin-bottom: calc(var(#{$variable-prefix}-spacer) - 1rem) !important
+
+.#{$class-prefix}spacer#{$separator}2xs
+  margin-bottom: calc(var(#{$variable-prefix}-spacer) - 0.75rem) !important
+
+.#{$class-prefix}spacer#{$separator}xs
+  margin-bottom: calc(var(#{$variable-prefix}-spacer) - 0.5rem) !important
+
+.#{$class-prefix}spacer#{$separator}sm
+  margin-bottom: calc(var(#{$variable-prefix}-spacer) - 0.25rem) !important
+
+.#{$class-prefix}spacer
+  margin-bottom: var(#{$variable-prefix}-spacer) !important
+
+.#{$class-prefix}spacer#{$separator}lg
+  margin-bottom: calc(var(#{$variable-prefix}-spacer) + 0.25rem) !important
+
+.#{$class-prefix}spacer#{$separator}xl
+  margin-bottom: calc(var(#{$variable-prefix}-spacer) + 0.5rem) !important
+
+.#{$class-prefix}spacer#{$separator}2xl
+  margin-bottom: calc(var(#{$variable-prefix}-spacer) + 0.75rem) !important
+
+.#{$class-prefix}spacer#{$separator}3xl
+  margin-bottom: calc(var(#{$variable-prefix}-spacer) + 1rem) !important
+
+.#{$class-prefix}spacer#{$separator}4xl
+  margin-bottom: calc(var(#{$variable-prefix}-spacer) + 1.25rem) !important
+
+.#{$class-prefix}spacer#{$separator}5xl
+  margin-bottom: calc(var(#{$variable-prefix}-spacer) + 1.5rem) !important
+
+.#{$class-prefix}spacer#{$separator}6xl
+  margin-bottom: calc(var(#{$variable-prefix}-spacer) + 2rem) !important
+
+.#{$class-prefix}spacer#{$separator}7xl
+  margin-bottom: calc(var(#{$variable-prefix}-spacer) + 3rem) !important
+
+@if $enable-margin == true
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  nav,
+  main,
+  section,
+  aside,
+  article,
+  footer,
+  figure,
+  details,
+  summary,
+  p,
+  button,
+  table,
+  label,
+  input,
+  textarea,
+  select,
+  img,
+  video,
+  ul,
+  ol,
+  .#{$class-prefix}h3,
+  .#{$class-prefix}h4,
+  .#{$class-prefix}h5,
+  .#{$class-prefix}h6,
+  .#{$class-prefix}nav,
+  .#{$class-prefix}main,
+  .#{$class-prefix}section,
+  .#{$class-prefix}aside,
+  .#{$class-prefix}article,
+  .#{$class-prefix}footer,
+  .#{$class-prefix}figure,
+  .#{$class-prefix}details,
+  .#{$class-prefix}summary,
+  .#{$class-prefix}p,
+  .#{$class-prefix}alert,
+  .#{$class-prefix}box,
+  .#{$class-prefix}btn,
+  .#{$class-prefix}carousel,
+  .#{$class-prefix}group,
+  .#{$class-prefix}hero,
+  .#{$class-prefix}list,
+  .#{$class-prefix}msg,
+  .#{$class-prefix}modal,
+  .#{$class-prefix}notepad,
+  .#{$class-prefix}notification,
+  .#{$class-prefix}pagination,
+  .#{$class-prefix}panel,
+  .#{$class-prefix}progress,
+  .#{$class-prefix}table,
+  .#{$class-prefix}input,
+  .#{$class-prefix}label,
+  .#{$class-prefix}textarea,
+  .#{$class-prefix}select
+    margin-bottom: var(#{$variable-prefix}-spacer)
+
+  .#{$class-prefix}h1,
+  .#{$class-prefix}title
+    margin-bottom: calc(var(#{$variable-prefix}-spacer) + 0.5rem)
+
+  .#{$class-prefix}h2,
+  .#{$class-prefix}subtitle
+    margin-bottom: calc(var(#{$variable-prefix}-spacer) + 0.25rem)

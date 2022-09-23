@@ -1,0 +1,28 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}modal
+  position: absolute
+  top: 2rem
+  left: 30%
+  width: 20rem
+  z-index: 1500
+  min-height: 6rem
+  transition: display 0.5s ease-in
+
+  & .#{$class-prefix}modal#{$separator}wrapper
+    @if $enable-padding == true
+      padding: 1rem 0.8rem
+
+    & .#{$class-prefix}modal#{$separator}title
+      font-weight: inherit
+      font-size: 1.3rem
+      margin-bottom: 0.5rem
+
+    & .#{$class-prefix}modal#{$separator}subtitle
+      font-weight: inherit
+      font-size: 1.2rem
+      margin-bottom: 0.5rem
+
+    & .#{$class-prefix}modal#{$separator}text
+      font-size: inherit
+      margin-bottom: 0.5rem

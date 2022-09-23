@@ -1,0 +1,27 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}notification
+  min-height: 3rem
+  width: 100%
+  z-index: 1000
+  min-height: 5rem
+
+  & .#{$class-prefix}notification#{$separator}wrapper
+    position: relative
+    @if $enable-padding == true
+      padding: 1rem 0.8rem
+
+    & .#{$class-prefix}notification#{$separator}title
+      font-weight: inherit
+      font-size: 1.3rem
+      margin-bottom: 0.5rem
+
+    & .#{$class-prefix}notification#{$separator}subtitle
+      font-weight: inherit
+      font-size: 1.2rem
+      margin-bottom: 0.5rem
+
+    & .#{$class-prefix}notification#{$separator}text
+      font-size: inherit
+      margin-bottom: 0.5rem
+

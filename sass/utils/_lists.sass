@@ -1,0 +1,36 @@
+@use "./../abstracts/" as *
+
+ul ul,
+ul ol,
+ol ol,
+ol ul,
+ul ul ul,
+ul ul ol,
+ul ol ol,
+ol ul ul,
+ol ul ol,
+ol ol ol
+  margin-left: var(#{$variable-prefix}-spacer)
+  margin-bottom: 0rem
+
+.#{$class-prefix}ls#{$separator}unstyled
+  list-style: none !important
+
+.#{$class-prefix}ls#{$separator}disc
+  list-style: disc !important
+
+.#{$class-prefix}ls#{$separator}decimal
+  list-style: decimal !important
+
+.#{$class-prefix}ls#{$separator}cirlce
+  list-style: circle !important
+
+.#{$class-prefix}ls#{$separator}square
+  list-style: square !important
+
+.#{$class-prefix}lsp#{$separator}inside
+  list-style-position: inside !important
+
+.#{$class-prefix}lsp#{$separator}outside
+  list-style-position: outside !important
+

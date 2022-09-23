@@ -1,0 +1,28 @@
+@mixin rotation($value)
+  -webkit-transform: rotate(#{$value}deg)
+  -ms-transform: rotate(#{$value}deg)
+  -o-transform: rotate(#{$value}deg)
+  transform: rotate(#{$value}deg)
+
+@mixin skew($value, $y)
+  @if $y
+    transform: skewY($value) !important
+
+  @else
+    transform: skewX($value) !important
+
+@mixin outline($clr)
+  border: $clr solid 0.1rem
+  transition: border background-color 0.15s ease-in
+
+  &:hover
+    background-color: $clr
+    border: var(--dark) solid 0.1rem
+
+@mixin link($clr)
+  color: var(--#{clr})
+
+  &:hover
+    background-color: complement($clr)
+
+

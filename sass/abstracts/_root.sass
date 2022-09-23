@@ -1,0 +1,351 @@
+@use "variables" as *
+
+:root
+  #{$variable-prefix}-animation-duration          : #{$animation-duration}
+  #{$variable-prefix}-animation-repeat            : #{$animation-repeat}
+  #{$variable-prefix}-animation-delay             : #{$animation-delay}
+
+  #{$variable-prefix}-transition-duration         : #{$transition-duration}
+  #{$variable-prefix}-transition-delay            : #{$transition-delay}
+
+  #{$variable-prefix}-primary                     : #{$primary}
+  #{$variable-prefix}-secondary                   : #{$secondary}
+  #{$variable-prefix}-muted                       : #{$muted}
+
+  #{$variable-prefix}-accent                      : #{$accent}
+  #{$variable-prefix}-error                       : #{$error}
+  #{$variable-prefix}-warning                     : #{$warning}
+  #{$variable-prefix}-info                        : #{$info}
+  #{$variable-prefix}-success                     : #{$success}
+
+  #{$variable-prefix}-dark                        : #{$dark}
+  #{$variable-prefix}-light                       : #{$light}
+
+  #{$variable-prefix}-red                         : #{$red}
+  #{$variable-prefix}-cyan                        : #{$cyan}
+  #{$variable-prefix}-blue                        : #{$blue}
+  #{$variable-prefix}-darkblue                    : #{$darkblue}
+  #{$variable-prefix}-purple                      : #{$purple}
+  #{$variable-prefix}-yellow                      : #{$yellow}
+  #{$variable-prefix}-lime                        : #{$lime}
+  #{$variable-prefix}-grey                        : #{$grey}
+  #{$variable-prefix}-black                       : #{$black}
+  #{$variable-prefix}-white                       : #{$white}
+  #{$variable-prefix}-orange                      : #{$orange}
+  #{$variable-prefix}-brown                       : #{$brown}
+  #{$variable-prefix}-maroon                      : #{$maroon}
+  #{$variable-prefix}-green                       : #{$green}
+  #{$variable-prefix}-olive                       : #{$olive}
+  #{$variable-prefix}-teal                        : #{$teal}
+
+  #{$variable-prefix}-facebook                    : #{$facebook}
+  #{$variable-prefix}-facebookold                 : #{$facebookold}
+  #{$variable-prefix}-twitter                     : #{$twitter}
+  #{$variable-prefix}-youtube                     : #{$youtube}
+  #{$variable-prefix}-linkedin                    : #{$linkedin}
+  #{$variable-prefix}-instagram                   : #{$instagram}
+  #{$variable-prefix}-google                      : #{$google}
+  #{$variable-prefix}-googleplus                  : #{$googleplus}
+  #{$variable-prefix}-pinterest                   : #{$pinterest}
+  #{$variable-prefix}-snapchat                    : #{$snapchat}
+  #{$variable-prefix}-whatsapp                    : #{$whatsapp}
+  #{$variable-prefix}-tiktok                      : #{$tiktok}
+  #{$variable-prefix}-apple                       : #{$apple}
+  #{$variable-prefix}-amazon                      : #{$amazon}
+  #{$variable-prefix}-microsoft                   : #{$microsoft}
+  #{$variable-prefix}-medium                      : #{$medium}
+  #{$variable-prefix}-skype                       : #{$skype}
+  #{$variable-prefix}-android                     : #{$android}
+  #{$variable-prefix}-twitch                      : #{$twitch}
+  #{$variable-prefix}-soundcloud                  : #{$soundcloud}
+  #{$variable-prefix}-spotify                     : #{$spotify}
+  #{$variable-prefix}-reddit                      : #{$reddit}
+  #{$variable-prefix}-quora                       : #{$quora}
+  #{$variable-prefix}-steam                       : #{$steam}
+  #{$variable-prefix}-discord                     : #{$discord}
+  #{$variable-prefix}-telegram                    : #{$telegram}
+
+  #{$variable-prefix}-primary-ltn-1               : #{$primary-ltn-1}
+  #{$variable-prefix}-primary-ltn-2               : #{$primary-ltn-2}
+  #{$variable-prefix}-primary-ltn-3               : #{$primary-ltn-3}
+  #{$variable-prefix}-primary-ltn-4               : #{$primary-ltn-4}
+  #{$variable-prefix}-primary-dkn-1               : #{$primary-dkn-1}
+  #{$variable-prefix}-primary-dkn-2               : #{$primary-dkn-2}
+  #{$variable-prefix}-primary-dkn-3               : #{$primary-dkn-3}
+  #{$variable-prefix}-primary-dkn-4               : #{$primary-dkn-4}
+
+  #{$variable-prefix}-secondary-ltn-1             : #{$secondary-ltn-1}
+  #{$variable-prefix}-secondary-ltn-2             : #{$secondary-ltn-2}
+  #{$variable-prefix}-secondary-ltn-3             : #{$secondary-ltn-3}
+  #{$variable-prefix}-secondary-ltn-4             : #{$secondary-ltn-4}
+  #{$variable-prefix}-secondary-dkn-1             : #{$secondary-dkn-1}
+  #{$variable-prefix}-secondary-dkn-2             : #{$secondary-dkn-2}
+  #{$variable-prefix}-secondary-dkn-3             : #{$secondary-dkn-3}
+  #{$variable-prefix}-secondary-dkn-4             : #{$secondary-dkn-4}
+
+  #{$variable-prefix}-muted-ltn-1                 : #{$muted-ltn-1}
+  #{$variable-prefix}-muted-ltn-2                 : #{$muted-ltn-2}
+  #{$variable-prefix}-muted-ltn-3                 : #{$muted-ltn-3}
+  #{$variable-prefix}-muted-ltn-4                 : #{$muted-ltn-4}
+  #{$variable-prefix}-muted-dkn-1                 : #{$muted-dkn-1}
+  #{$variable-prefix}-muted-dkn-2                 : #{$muted-dkn-2}
+  #{$variable-prefix}-muted-dkn-3                 : #{$muted-dkn-3}
+  #{$variable-prefix}-muted-dkn-4                 : #{$muted-dkn-4}
+
+  #{$variable-prefix}-accent-ltn-1                : #{$accent-ltn-1}
+  #{$variable-prefix}-accent-ltn-2                : #{$accent-ltn-2}
+  #{$variable-prefix}-accent-ltn-3                : #{$accent-ltn-3}
+  #{$variable-prefix}-accent-ltn-4                : #{$accent-ltn-4}
+  #{$variable-prefix}-accent-dkn-1                : #{$accent-dkn-1}
+  #{$variable-prefix}-accent-dkn-2                : #{$accent-dkn-2}
+  #{$variable-prefix}-accent-dkn-3                : #{$accent-dkn-3}
+  #{$variable-prefix}-accent-dkn-4                : #{$accent-dkn-4}
+
+  #{$variable-prefix}-error-ltn-1                 : #{$error-ltn-1}
+  #{$variable-prefix}-error-ltn-2                 : #{$error-ltn-2}
+  #{$variable-prefix}-error-ltn-3                 : #{$error-ltn-3}
+  #{$variable-prefix}-error-ltn-4                 : #{$error-ltn-4}
+  #{$variable-prefix}-error-dkn-1                 : #{$error-dkn-1}
+  #{$variable-prefix}-error-dkn-2                 : #{$error-dkn-2}
+  #{$variable-prefix}-error-dkn-3                 : #{$error-dkn-3}
+  #{$variable-prefix}-error-dkn-4                 : #{$error-dkn-4}
+
+  #{$variable-prefix}-warning-ltn-1               : #{$warning-ltn-1}
+  #{$variable-prefix}-warning-ltn-2               : #{$warning-ltn-2}
+  #{$variable-prefix}-warning-ltn-3               : #{$warning-ltn-3}
+  #{$variable-prefix}-warning-ltn-4               : #{$warning-ltn-4}
+  #{$variable-prefix}-warning-dkn-1               : #{$warning-dkn-1}
+  #{$variable-prefix}-warning-dkn-2               : #{$warning-dkn-2}
+  #{$variable-prefix}-warning-dkn-3               : #{$warning-dkn-3}
+  #{$variable-prefix}-warning-dkn-4               : #{$warning-dkn-4}
+
+  #{$variable-prefix}-info-ltn-1                  : #{$info-ltn-1}
+  #{$variable-prefix}-info-ltn-2                  : #{$info-ltn-2}
+  #{$variable-prefix}-info-ltn-3                  : #{$info-ltn-3}
+  #{$variable-prefix}-info-ltn-4                  : #{$info-ltn-4}
+  #{$variable-prefix}-info-dkn-1                  : #{$info-dkn-1}
+  #{$variable-prefix}-info-dkn-2                  : #{$info-dkn-2}
+  #{$variable-prefix}-info-dkn-3                  : #{$info-dkn-3}
+  #{$variable-prefix}-info-dkn-4                  : #{$info-dkn-4}
+
+  #{$variable-prefix}-success-ltn-1               : #{$success-ltn-1}
+  #{$variable-prefix}-success-ltn-2               : #{$success-ltn-2}
+  #{$variable-prefix}-success-ltn-3               : #{$success-ltn-3}
+  #{$variable-prefix}-success-ltn-4               : #{$success-ltn-4}
+  #{$variable-prefix}-success-dkn-1               : #{$success-dkn-1}
+  #{$variable-prefix}-success-dkn-2               : #{$success-dkn-2}
+  #{$variable-prefix}-success-dkn-3               : #{$success-dkn-3}
+  #{$variable-prefix}-success-dkn-4               : #{$success-dkn-4}
+
+  #{$variable-prefix}-dark-ltn-1                  : #{$dark-ltn-1}
+  #{$variable-prefix}-dark-ltn-2                  : #{$dark-ltn-2}
+  #{$variable-prefix}-dark-ltn-3                  : #{$dark-ltn-3}
+  #{$variable-prefix}-dark-ltn-4                  : #{$dark-ltn-4}
+  #{$variable-prefix}-dark-dkn-1                  : #{$dark-dkn-1}
+  #{$variable-prefix}-dark-dkn-2                  : #{$dark-dkn-2}
+  #{$variable-prefix}-dark-dkn-3                  : #{$dark-dkn-3}
+  #{$variable-prefix}-dark-dkn-4                  : #{$dark-dkn-4}
+
+  #{$variable-prefix}-light-ltn-1                 : #{$light-ltn-1}
+  #{$variable-prefix}-light-ltn-2                 : #{$light-ltn-2}
+  #{$variable-prefix}-light-ltn-3                 : #{$light-ltn-3}
+  #{$variable-prefix}-light-ltn-4                 : #{$light-ltn-4}
+  #{$variable-prefix}-light-dkn-1                 : #{$light-dkn-1}
+  #{$variable-prefix}-light-dkn-2                 : #{$light-dkn-2}
+  #{$variable-prefix}-light-dkn-3                 : #{$light-dkn-3}
+  #{$variable-prefix}-light-dkn-4                 : #{$light-dkn-4}
+
+  #{$variable-prefix}-red-ltn-1                   : #{$red-ltn-1}
+  #{$variable-prefix}-red-ltn-2                   : #{$red-ltn-2}
+  #{$variable-prefix}-red-ltn-3                   : #{$red-ltn-3}
+  #{$variable-prefix}-red-ltn-4                   : #{$red-ltn-4}
+  #{$variable-prefix}-red-dkn-1                   : #{$red-dkn-1}
+  #{$variable-prefix}-red-dkn-2                   : #{$red-dkn-2}
+  #{$variable-prefix}-red-dkn-3                   : #{$red-dkn-3}
+  #{$variable-prefix}-red-dkn-4                   : #{$red-dkn-4}
+
+  #{$variable-prefix}-cyan-ltn-1                  : #{$cyan-ltn-1}
+  #{$variable-prefix}-cyan-ltn-2                  : #{$cyan-ltn-2}
+  #{$variable-prefix}-cyan-ltn-3                  : #{$cyan-ltn-3}
+  #{$variable-prefix}-cyan-ltn-4                  : #{$cyan-ltn-4}
+  #{$variable-prefix}-cyan-dkn-1                  : #{$cyan-dkn-1}
+  #{$variable-prefix}-cyan-dkn-2                  : #{$cyan-dkn-2}
+  #{$variable-prefix}-cyan-dkn-3                  : #{$cyan-dkn-3}
+  #{$variable-prefix}-cyan-dkn-4                  : #{$cyan-dkn-4}
+
+  #{$variable-prefix}-blue-ltn-1                  : #{$blue-ltn-1}
+  #{$variable-prefix}-blue-ltn-2                  : #{$blue-ltn-2}
+  #{$variable-prefix}-blue-ltn-3                  : #{$blue-ltn-3}
+  #{$variable-prefix}-blue-ltn-4                  : #{$blue-ltn-4}
+  #{$variable-prefix}-blue-dkn-1                  : #{$blue-dkn-1}
+  #{$variable-prefix}-blue-dkn-2                  : #{$blue-dkn-2}
+  #{$variable-prefix}-blue-dkn-3                  : #{$blue-dkn-3}
+  #{$variable-prefix}-blue-dkn-4                  : #{$blue-dkn-4}
+
+  #{$variable-prefix}-darkblue-ltn-1              : #{$darkblue-ltn-1}
+  #{$variable-prefix}-darkblue-ltn-2              : #{$darkblue-ltn-2}
+  #{$variable-prefix}-darkblue-ltn-3              : #{$darkblue-ltn-3}
+  #{$variable-prefix}-darkblue-ltn-4              : #{$darkblue-ltn-4}
+  #{$variable-prefix}-darkblue-dkn-1              : #{$darkblue-dkn-1}
+  #{$variable-prefix}-darkblue-dkn-2              : #{$darkblue-dkn-2}
+  #{$variable-prefix}-darkblue-dkn-3              : #{$darkblue-dkn-3}
+  #{$variable-prefix}-darkblue-dkn-4              : #{$darkblue-dkn-4}
+
+  #{$variable-prefix}-purple-ltn-1                : #{$purple-ltn-1}
+  #{$variable-prefix}-purple-ltn-2                : #{$purple-ltn-2}
+  #{$variable-prefix}-purple-ltn-3                : #{$purple-ltn-3}
+  #{$variable-prefix}-purple-ltn-4                : #{$purple-ltn-4}
+  #{$variable-prefix}-purple-dkn-1                : #{$purple-dkn-1}
+  #{$variable-prefix}-purple-dkn-2                : #{$purple-dkn-2}
+  #{$variable-prefix}-purple-dkn-3                : #{$purple-dkn-3}
+  #{$variable-prefix}-purple-dkn-4                : #{$purple-dkn-4}
+
+  #{$variable-prefix}-yellow-ltn-1                : #{$yellow-ltn-1}
+  #{$variable-prefix}-yellow-ltn-2                : #{$yellow-ltn-2}
+  #{$variable-prefix}-yellow-ltn-3                : #{$yellow-ltn-3}
+  #{$variable-prefix}-yellow-ltn-4                : #{$yellow-ltn-4}
+  #{$variable-prefix}-yellow-dkn-1                : #{$yellow-dkn-1}
+  #{$variable-prefix}-yellow-dkn-2                : #{$yellow-dkn-2}
+  #{$variable-prefix}-yellow-dkn-3                : #{$yellow-dkn-3}
+  #{$variable-prefix}-yellow-dkn-4                : #{$yellow-dkn-4}
+
+  #{$variable-prefix}-lime-ltn-1                  : #{$lime-ltn-1}
+  #{$variable-prefix}-lime-ltn-2                  : #{$lime-ltn-2}
+  #{$variable-prefix}-lime-ltn-3                  : #{$lime-ltn-3}
+  #{$variable-prefix}-lime-ltn-4                  : #{$lime-ltn-4}
+  #{$variable-prefix}-lime-dkn-1                  : #{$lime-dkn-1}
+  #{$variable-prefix}-lime-dkn-2                  : #{$lime-dkn-2}
+  #{$variable-prefix}-lime-dkn-3                  : #{$lime-dkn-3}
+  #{$variable-prefix}-lime-dkn-4                  : #{$lime-dkn-4}
+
+  #{$variable-prefix}-grey-ltn-1                  : #{$grey-ltn-1}
+  #{$variable-prefix}-grey-ltn-2                  : #{$grey-ltn-2}
+  #{$variable-prefix}-grey-ltn-3                  : #{$grey-ltn-3}
+  #{$variable-prefix}-grey-ltn-4                  : #{$grey-ltn-4}
+  #{$variable-prefix}-grey-dkn-1                  : #{$grey-dkn-1}
+  #{$variable-prefix}-grey-dkn-2                  : #{$grey-dkn-2}
+  #{$variable-prefix}-grey-dkn-3                  : #{$grey-dkn-3}
+  #{$variable-prefix}-grey-dkn-4                  : #{$grey-dkn-4}
+
+  #{$variable-prefix}-black-ltn-1                 : #{$black-ltn-1}
+  #{$variable-prefix}-black-ltn-2                 : #{$black-ltn-2}
+  #{$variable-prefix}-black-ltn-3                 : #{$black-ltn-3}
+  #{$variable-prefix}-black-ltn-4                 : #{$black-ltn-4}
+  #{$variable-prefix}-black-dkn-1                 : #{$black-dkn-1}
+  #{$variable-prefix}-black-dkn-2                 : #{$black-dkn-2}
+  #{$variable-prefix}-black-dkn-3                 : #{$black-dkn-3}
+  #{$variable-prefix}-black-dkn-4                 : #{$black-dkn-4}
+
+  #{$variable-prefix}-white-ltn-1                 : #{$white-ltn-1}
+  #{$variable-prefix}-white-ltn-2                 : #{$white-ltn-2}
+  #{$variable-prefix}-white-ltn-3                 : #{$white-ltn-3}
+  #{$variable-prefix}-white-ltn-4                 : #{$white-ltn-4}
+  #{$variable-prefix}-white-dkn-1                 : #{$white-dkn-1}
+  #{$variable-prefix}-white-dkn-2                 : #{$white-dkn-2}
+  #{$variable-prefix}-white-dkn-3                 : #{$white-dkn-3}
+  #{$variable-prefix}-white-dkn-4                 : #{$white-dkn-4}
+
+  #{$variable-prefix}-orange-ltn-1                : #{$orange-ltn-1}
+  #{$variable-prefix}-orange-ltn-2                : #{$orange-ltn-2}
+  #{$variable-prefix}-orange-ltn-3                : #{$orange-ltn-3}
+  #{$variable-prefix}-orange-ltn-4                : #{$orange-ltn-4}
+  #{$variable-prefix}-orange-dkn-1                : #{$orange-dkn-1}
+  #{$variable-prefix}-orange-dkn-2                : #{$orange-dkn-2}
+  #{$variable-prefix}-orange-dkn-3                : #{$orange-dkn-3}
+  #{$variable-prefix}-orange-dkn-4                : #{$orange-dkn-4}
+
+  #{$variable-prefix}-brown-ltn-1                 : #{$brown-ltn-1}
+  #{$variable-prefix}-brown-ltn-2                 : #{$brown-ltn-2}
+  #{$variable-prefix}-brown-ltn-3                 : #{$brown-ltn-3}
+  #{$variable-prefix}-brown-ltn-4                 : #{$brown-ltn-4}
+  #{$variable-prefix}-brown-dkn-1                 : #{$brown-dkn-1}
+  #{$variable-prefix}-brown-dkn-2                 : #{$brown-dkn-2}
+  #{$variable-prefix}-brown-dkn-3                 : #{$brown-dkn-3}
+  #{$variable-prefix}-brown-dkn-4                 : #{$brown-dkn-4}
+
+  #{$variable-prefix}-maroon-ltn-1                : #{$maroon-ltn-1}
+  #{$variable-prefix}-maroon-ltn-2                : #{$maroon-ltn-2}
+  #{$variable-prefix}-maroon-ltn-3                : #{$maroon-ltn-3}
+  #{$variable-prefix}-maroon-ltn-4                : #{$maroon-ltn-4}
+  #{$variable-prefix}-maroon-dkn-1                : #{$maroon-dkn-1}
+  #{$variable-prefix}-maroon-dkn-2                : #{$maroon-dkn-2}
+  #{$variable-prefix}-maroon-dkn-3                : #{$maroon-dkn-3}
+  #{$variable-prefix}-maroon-dkn-4                : #{$maroon-dkn-4}
+
+  #{$variable-prefix}-green-ltn-1                 : #{$green-ltn-1}
+  #{$variable-prefix}-green-ltn-2                 : #{$green-ltn-2}
+  #{$variable-prefix}-green-ltn-3                 : #{$green-ltn-3}
+  #{$variable-prefix}-green-ltn-4                 : #{$green-ltn-4}
+  #{$variable-prefix}-green-dkn-1                 : #{$green-dkn-1}
+  #{$variable-prefix}-green-dkn-2                 : #{$green-dkn-2}
+  #{$variable-prefix}-green-dkn-3                 : #{$green-dkn-3}
+  #{$variable-prefix}-green-dkn-4                 : #{$green-dkn-4}
+
+  #{$variable-prefix}-olive-ltn-1                 : #{$olive-ltn-1}
+  #{$variable-prefix}-olive-ltn-2                 : #{$olive-ltn-2}
+  #{$variable-prefix}-olive-ltn-3                 : #{$olive-ltn-3}
+  #{$variable-prefix}-olive-ltn-4                 : #{$olive-ltn-4}
+  #{$variable-prefix}-olive-dkn-1                 : #{$olive-dkn-1}
+  #{$variable-prefix}-olive-dkn-2                 : #{$olive-dkn-2}
+  #{$variable-prefix}-olive-dkn-3                 : #{$olive-dkn-3}
+  #{$variable-prefix}-olive-dkn-4                 : #{$olive-dkn-4}
+
+  #{$variable-prefix}-teal-ltn-1                  : #{$teal-ltn-1}
+  #{$variable-prefix}-teal-ltn-2                  : #{$teal-ltn-2}
+  #{$variable-prefix}-teal-ltn-3                  : #{$teal-ltn-3}
+  #{$variable-prefix}-teal-ltn-4                  : #{$teal-ltn-4}
+  #{$variable-prefix}-teal-dkn-1                  : #{$teal-dkn-1}
+  #{$variable-prefix}-teal-dkn-2                  : #{$teal-dkn-2}
+  #{$variable-prefix}-teal-dkn-3                  : #{$teal-dkn-3}
+  #{$variable-prefix}-teal-dkn-4                  : #{$teal-dkn-4}
+  #{$variable-prefix}-border-width                : #{$border-width}
+  #{$variable-prefix}-border-color                : #{$border-color}
+  #{$variable-prefix}-border-style                : #{$border-style}
+
+  #{$variable-prefix}-spacer                      : #{$spacer}
+
+  #{$variable-prefix}-title-font-family           : #{$serif}
+  #{$variable-prefix}-title-font-size             : #{$title-font-size}
+
+  #{$variable-prefix}-font-size                   : #{$font-size}
+
+  #{$variable-prefix}-sans-serif                  : #{$sans-serif}
+  #{$variable-prefix}-sans-serif-alt              : #{$sans-serif-alt}
+  #{$variable-prefix}-serif                       : #{$serif}
+  #{$variable-prefix}-fira-code                   : #{$fira-code}
+  #{$variable-prefix}-pacifio                     : #{$pacifio}
+
+  #{$variable-prefix}-input-border-radius         : #{$input-border-radius}
+  #{$variable-prefix}-button-border-radius        : #{$button-border-radius}
+
+  #{$variable-prefix}-wrapper-md                  : #{$wrapper-md}
+
+  #{$variable-prefix}-box-shadow-7xs              : #{$wrapper-md}
+  #{$variable-prefix}-box-shadow-6xs              : #{$wrapper-md}
+  #{$variable-prefix}-box-shadow-5xs              : #{$wrapper-md}
+  #{$variable-prefix}-box-shadow-4xs              : #{$wrapper-md}
+  #{$variable-prefix}-box-shadow-3xs              : #{$wrapper-md}
+  #{$variable-prefix}-box-shadow-2xs              : #{$wrapper-md}
+  #{$variable-prefix}-box-shadow-xs               : #{$wrapper-md}
+  #{$variable-prefix}-box-shadow-sm               : #{$wrapper-md}
+  #{$variable-prefix}-box-shadow-md               : #{$wrapper-md}
+  #{$variable-prefix}-box-shadow-lg               : #{$wrapper-md}
+  #{$variable-prefix}-box-shadow-xl               : #{$wrapper-md}
+  #{$variable-prefix}-box-shadow-2xl              : #{$wrapper-md}
+  #{$variable-prefix}-box-shadow-3xl              : #{$wrapper-md}
+  #{$variable-prefix}-box-shadow-4xl              : #{$wrapper-md}
+  #{$variable-prefix}-box-shadow-5xl              : #{$wrapper-md}
+  #{$variable-prefix}-box-shadow-6xl              : #{$wrapper-md}
+  #{$variable-prefix}-box-shadow-7xl              : #{$wrapper-md}
+
+  #{$variable-prefix}-mobile-min-width            : #{$mobile-min-width}
+  #{$variable-prefix}-mobile-max-width            : #{$mobile-max-width}
+
+  #{$variable-prefix}-tablet-min-width            : #{$tablet-min-width}
+  #{$variable-prefix}-tablet-max-width            : #{$tablet-max-width}
+
+  #{$variable-prefix}-laptop-min-width            : #{$laptop-min-width}
+  #{$variable-prefix}-laptop-max-width            : #{$laptop-max-width}
+
+  #{$variable-prefix}-desktop-min-width           : #{$desktop-min-width}
+

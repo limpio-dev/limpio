@@ -1,0 +1,146 @@
+@use "./../abstracts/" as *
+@use "sass:math"
+@use "sass:string"
+
+@each $key, $value in $value-props
+  .#{$class-prefix}y#{$separator}#{$key}
+    transform: translateY($value) !important
+
+  .#{$class-prefix}x#{$separator}#{$key}
+    transform: translateX($value) !important
+
+@for $i from 1 through 30
+  .#{$class-prefix}y#{$separator}#{$i * 5}\%
+    transform: translateY(#{$i * 5} + '%') !important
+
+  .#{$class-prefix}x#{$separator}#{$i * 5}\%
+    transform: translateX(#{$i * 5} + '%') !important
+
+@media screen and (min-width: $mobile-min-width) and (max-width: $mobile-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}y#{$separator}#{$key}
+      transform: translateY($value) !important
+
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}x#{$separator}#{$key}
+      transform: translateX($value) !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}y#{$separator}#{$i * 5}\%
+      transform: translateY(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}x#{$separator}#{$i * 5}\%
+      transform: translateX(#{$i * 5} + '%') !important
+
+@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}y#{$separator}#{$key}
+      transform: translateY($value) !important
+
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}x#{$separator}#{$key}
+      transform: translateX($value) !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}y#{$separator}#{$i * 5}\%
+      transform: translateY(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}x#{$separator}#{$i * 5}\%
+      transform: translateX(#{$i * 5} + '%') !important
+
+@media screen and (min-width: $tablet-min-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}y#{$separator}#{$key}
+      transform: translateY($value) !important
+
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}x#{$separator}#{$key}
+      transform: translateX($value) !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}y#{$separator}#{$i * 5}\%
+      transform: translateY(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}x#{$separator}#{$i * 5}\%
+      transform: translateX(#{$i * 5} + '%') !important
+
+@media screen and (max-width: $tablet-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}y#{$separator}#{$key}
+      transform: translateY($value) !important
+
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}x#{$separator}#{$key}
+      transform: translateX($value) !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}y#{$separator}#{$i * 5}\%
+      transform: translateY(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}x#{$separator}#{$i * 5}\%
+      transform: translateX(#{$i * 5} + '%') !important
+
+@media screen and (min-width: $laptop-min-width) and (max-width: $laptop-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}y#{$separator}#{$key}
+      transform: translateY($value) !important
+
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}x#{$separator}#{$key}
+      transform: translateX($value) !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}y#{$separator}#{$i * 5}\%
+      transform: translateY(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}x#{$separator}#{$i * 5}\%
+      transform: translateX(#{$i * 5} + '%') !important
+
+@media screen and (min-width: $laptop-min-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}y#{$separator}#{$key}
+      transform: translateY($value) !important
+
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}x#{$separator}#{$key}
+      transform: translateX($value) !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}y#{$separator}#{$i * 5}\%
+      transform: translateY(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}x#{$separator}#{$i * 5}\%
+      transform: translateX(#{$i * 5} + '%') !important
+
+@media screen and (max-width: $laptop-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}y#{$separator}#{$key}
+      transform: translateY($value) !important
+
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}x#{$separator}#{$key}
+      transform: translateX($value) !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}y#{$separator}#{$i * 5}\%
+      transform: translateY(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}x#{$separator}#{$i * 5}\%
+      transform: translateX(#{$i * 5} + '%') !important
+
+@media screen and (min-width: $desktop-min-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}y#{$separator}#{$key}
+      transform: translateY($value) !important
+
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}x#{$separator}#{$key}
+      transform: translateX($value) !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}y#{$separator}#{$i * 5}\%
+      transform: translateY(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}x#{$separator}#{$i * 5}\%
+      transform: translateX(#{$i * 5} + '%') !important
+

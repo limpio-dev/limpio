@@ -1,0 +1,97 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}wrapper,
+.#{$class-prefix}wrapper#{$separator}full#{$separator}width,
+.#{$class-prefix}wrapper#{$separator}7xs,
+.#{$class-prefix}wrapper#{$separator}6xs,
+.#{$class-prefix}wrapper#{$separator}5xs,
+.#{$class-prefix}wrapper#{$separator}4xs,
+.#{$class-prefix}wrapper#{$separator}3xs,
+.#{$class-prefix}wrapper#{$separator}2xs,
+.#{$class-prefix}wrapper#{$separator}xs,
+.#{$class-prefix}wrapper#{$separator}sm,
+.#{$class-prefix}wrapper#{$separator}md,
+.#{$class-prefix}wrapper#{$separator}lg,
+.#{$class-prefix}wrapper#{$separator}xl,
+.#{$class-prefix}wrapper#{$separator}2xl,
+.#{$class-prefix}wrapper#{$separator}3xl,
+.#{$class-prefix}wrapper#{$separator}4xl,
+.#{$class-prefix}wrapper#{$separator}5xl,
+.#{$class-prefix}wrapper#{$separator}6xl,
+.#{$class-prefix}wrapper#{$separator}7xl
+  @if $enable-padding == true
+    padding-left: 0.8375rem
+    padding-right: 0.8375rem
+  margin: 0 auto
+
+@media (min-width: 36rem)
+  .#{$class-prefix}wrapper
+    max-width: 33.75rem
+
+@media (min-width: 48rem)
+  .#{$class-prefix}wrapper
+    max-width: 45rem
+
+@media (min-width: 62rem)
+  .#{$class-prefix}wrapper
+    max-width: 60rem
+
+@media (min-width: 75rem)
+  .#{$class-prefix}wrapper
+    max-width: 71.25rem
+
+@media (min-width: 87.5rem)
+  .#{$class-prefix}wrapper
+    max-width: 82.5rem
+
+.#{$class-prefix}wrapper#{$separator}7sm
+  max-width: calc(var(#{$variable-prefix}-wrapper-md) - 40rem)
+
+.#{$class-prefix}wrapper#{$separator}6sm
+  max-width: calc(var(#{$variable-prefix}-wrapper-md) - 35rem)
+
+.#{$class-prefix}wrapper#{$separator}5sm
+  max-width: calc(var(#{$variable-prefix}-wrapper-md) - 30rem)
+
+.#{$class-prefix}wrapper#{$separator}4sm
+  max-width: calc(var(#{$variable-prefix}-wrapper-md) - 25rem)
+
+.#{$class-prefix}wrapper#{$separator}3sm
+  max-width: calc(var(#{$variable-prefix}-wrapper-md) - 20rem)
+
+.#{$class-prefix}wrapper#{$separator}2sm
+  max-width: calc(var(#{$variable-prefix}-wrapper-md) - 15rem)
+
+.#{$class-prefix}wrapper#{$separator}xs
+  max-width: calc(var(#{$variable-prefix}-wrapper-md) - 10rem)
+
+.#{$class-prefix}wrapper#{$separator}sm
+  max-width: calc(var(#{$variable-prefix}-wrapper-md) - 5rem)
+
+.#{$class-prefix}wrapper#{$separator}md
+  max-width: var(#{$variable-prefix}-wrapper-md)
+
+.#{$class-prefix}wrapper#{$separator}lg
+  max-width: calc(var(#{$variable-prefix}-wrapper-md) + 5rem)
+
+.#{$class-prefix}wrapper#{$separator}xl
+  max-width: calc(var(#{$variable-prefix}-wrapper-md) + 10rem)
+
+.#{$class-prefix}wrapper#{$separator}2xl
+  max-width: calc(var(#{$variable-prefix}-wrapper-md) + 15rem)
+
+.#{$class-prefix}wrapper#{$separator}3xl
+  max-width: calc(var(#{$variable-prefix}-wrapper-md) + 20rem)
+
+.#{$class-prefix}wrapper#{$separator}4xl
+  max-width: calc(var(#{$variable-prefix}-wrapper-md) + 25rem)
+
+.#{$class-prefix}wrapper#{$separator}5xl
+  max-width: calc(var(#{$variable-prefix}-wrapper-md) + 30rem)
+
+.#{$class-prefix}wrapper#{$separator}6xl
+  max-width: calc(var(#{$variable-prefix}-wrapper-md) + 40rem)
+
+.#{$class-prefix}wrapper#{$separator}7xl
+  max-width: calc(var(#{$variable-prefix}-wrapper-md) + 50rem)
+

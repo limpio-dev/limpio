@@ -1,0 +1,156 @@
+@use "./../abstracts/" as *
+@use "sass:math"
+@use "sass:string"
+
+@each $key, $value in $value-props
+  .#{$class-prefix}miw#{$separator}#{$key}
+    min-width: $value !important
+
+@for $i from 1 through 30
+  .#{$class-prefix}miw#{$separator}#{$i * 5}\%
+    min-width: #{$i * 5} + '%' !important
+
+@for $i from 1 to 41
+  .#{$class-prefix}miw#{$separator}#{$i * 5}vw
+    min-width: #{$i * 5}vw !important
+
+.#{$class-prefix}miw#{$separator}auto
+  min-width: auto !important
+
+@media screen and (min-width: $mobile-min-width) and (max-width: $mobile-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}miw#{$separator}#{$key}
+      min-width: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}miw#{$separator}#{$i * 5}\%
+      min-width: #{$i * 5} + '%' !important
+
+  @for $i from 1 to 41
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}miw#{$separator}#{$i * 5}vw
+      min-width: #{$i * 5}vw !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}miw#{$separator}auto
+    min-width: auto !important
+
+@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}miw#{$separator}#{$key}
+      min-width: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}miw#{$separator}#{$i * 5}\%
+      min-width: #{$i * 5} + '%' !important
+
+  @for $i from 1 to 41
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}miw#{$separator}#{$i * 5}vw
+      min-width: #{$i * 5}vw !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}miw#{$separator}auto
+    min-width: auto !important
+
+@media screen and (min-width: $tablet-min-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}miw#{$separator}#{$key}
+      min-width: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}miw#{$separator}#{$i * 5}\%
+      min-width: #{$i * 5} + '%' !important
+
+  @for $i from 1 to 41
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}miw#{$separator}#{$i * 5}vw
+      min-width: #{$i * 5}vw !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}miw#{$separator}auto
+    min-width: auto !important
+
+@media screen and (max-width: $tablet-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}miw#{$separator}#{$key}
+      min-width: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}miw#{$separator}#{$i * 5}\%
+      min-width: #{$i * 5} + '%' !important
+
+  @for $i from 1 to 41
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}miw#{$separator}#{$i * 5}vw
+      min-width: #{$i * 5}vw !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}miw#{$separator}auto
+    min-width: auto !important
+
+@media screen and (min-width: $laptop-min-width) and (max-width: $laptop-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}miw#{$separator}#{$key}
+      min-width: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}miw#{$separator}#{$i * 5}\%
+      min-width: #{$i * 5} + '%' !important
+
+  @for $i from 1 to 41
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}miw#{$separator}#{$i * 5}vw
+      min-width: #{$i * 5}vw !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}miw#{$separator}auto
+    min-width: auto !important
+
+@media screen and (min-width: $laptop-min-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}miw#{$separator}#{$key}
+      min-width: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}miw#{$separator}#{$i * 5}\%
+      min-width: #{$i * 5} + '%' !important
+
+  @for $i from 1 to 41
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}miw#{$separator}#{$i * 5}vw
+      min-width: #{$i * 5}vw !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}miw#{$separator}auto
+    min-width: auto !important
+
+@media screen and (max-width: $laptop-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}miw#{$separator}#{$key}
+      min-width: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}miw#{$separator}#{$i * 5}\%
+      min-width: #{$i * 5} + '%' !important
+
+  @for $i from 1 to 41
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}miw#{$separator}#{$i * 5}vw
+      min-width: #{$i * 5}vw !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}miw#{$separator}auto
+    min-width: auto !important
+
+@media screen and (min-width: $desktop-min-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}miw#{$separator}#{$key}
+      min-width: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}miw#{$separator}#{$i * 5}\%
+      min-width: #{$i * 5} + '%' !important
+
+  @for $i from 1 to 41
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}miw#{$separator}#{$i * 5}vw
+      min-width: #{$i * 5}vw !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}miw#{$separator}auto
+    min-width: auto !important
+
+

@@ -1,0 +1,41 @@
+@use "./../abstracts/" as *
+
+h1, h2, h3, h4, h5, h6, .#{$class-prefix}h1, .#{$class-prefix}h2, .#{$class-prefix}h3, .#{$class-prefix}h4, .#{$class-prefix}h5, .#{$class-prefix}h6
+  font-family: var(#{$variable-prefix}-title-font-family)
+
+h1, .#{$class-prefix}h1, .#{$class-prefix}title
+  font-size: var(#{$variable-prefix}-title-font-size)
+
+h2, .#{$class-prefix}h2, .#{$class-prefix}subtitle
+  font-size: calc(var(#{$variable-prefix}-title-font-size) - 0.25rem)
+
+h3, .#{$class-prefix}h3
+  font-size: calc(var(#{$variable-prefix}-title-font-size) - 0.5rem)
+
+h4, .#{$class-prefix}h4
+  font-size: calc(var(#{$variable-prefix}-title-font-size) - 0.75rem)
+
+h5, .#{$class-prefix}h5
+  font-size: calc(var(#{$variable-prefix}-font-size) - 1rem)
+
+h6, .#{$class-prefix}h6
+  font-size: calc(var(#{$variable-prefix}-title-font-size) - 1.25rem)
+
+@media only screen and (max-width: 45rem)
+  h1, .#{$class-prefix}h1, .#{$class-prefix}title
+    font-size: calc(var(#{$variable-prefix}-title-font-size) - 0.5rem)
+
+  h2, .#{$class-prefix}h2, .#{$class-prefix}subtitle
+    font-size: calc(var(#{$variable-prefix}-title-font-size) - 0.75rem)
+
+  h3, .#{$class-prefix}h3
+    font-size: calc(var(#{$variable-prefix}-title-font-size) - 1.25rem)
+
+  h4, .#{$class-prefix}h4
+    font-size: calc(var(#{$variable-prefix}-title-font-size) - 1rem)
+
+  h5, .#{$class-prefix}h5
+    font-size: calc(var(#{$variable-prefix}-title-font-size) - 1.25rem)
+
+  h6, .#{$class-prefix}h6
+    font-size: calc(var(#{$variable-prefix}-title-font-size) - 1.25rem)

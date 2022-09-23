@@ -1,0 +1,16 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}panel *
+  margin-bottom: 0 !important
+
+.#{$class-prefix}panel
+  & .#{$class-prefix}panel#{$separator}wrapper
+    @if $enable-padding == true
+      padding: 1rem 0rem
+    @include flex
+    justify-content: space-between
+
+    & .#{$class-prefix}panel#{$separator}brand
+      font-weight: 500
+      cursor: pointer
+

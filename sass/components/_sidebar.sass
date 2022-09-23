@@ -1,0 +1,16 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}sidebar
+  position: absolute
+  max-width: 45%
+  min-width: 20%
+  min-height: 100vh
+  left: -90%
+  z-index: 1000
+  transition: left 0.7s ease-in
+
+  & .#{$class-prefix}sidebar#{$separator}wrapper
+    border-bottom: 2px solid var(#{$variable-prefix}-border-color)
+    @if $enable-padding == true
+      padding: 1rem 0.8rem
+      padding-top: 1rem

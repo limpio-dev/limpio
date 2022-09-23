@@ -1,0 +1,120 @@
+@use "./../abstracts/" as *
+@use "sass:math"
+@use "sass:string"
+
+@each $key, $value in $value-props
+  .#{$class-prefix}b#{$separator}#{$key}
+    bottom: $value !important
+
+@for $i from 1 through 30
+  .#{$class-prefix}b#{$separator}#{$i * 5}\%
+    bottom: #{$i * 5} + '%' !important
+
+.#{$class-prefix}b#{$separator}auto
+  bottom: auto !important
+
+@media screen and (min-width: $mobile-min-width) and (max-width: $mobile-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}b#{$separator}#{$key}
+      bottom: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}b#{$separator}#{$i * 5}\%
+      bottom: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}b#{$separator}auto
+    bottom: auto !important
+
+@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}b#{$separator}#{$key}
+      bottom: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}b#{$separator}#{$i * 5}\%
+      bottom: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}b#{$separator}auto
+    bottom: auto !important
+
+@media screen and (min-width: $tablet-min-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}b#{$separator}#{$key}
+      bottom: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}b#{$separator}#{$i * 5}\%
+      bottom: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}#{$separator}b#{$separator}auto
+    bottom: auto !important
+
+@media screen and (max-width: $tablet-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}b#{$separator}#{$key}
+      bottom: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}b#{$separator}#{$i * 5}\%
+      bottom: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}b#{$separator}auto
+    bottom: auto !important
+
+@media screen and (min-width: $laptop-min-width) and (max-width: $laptop-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}b#{$separator}#{$key}
+      bottom: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}b#{$separator}#{$i * 5}\%
+      bottom: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}b#{$separator}auto
+    bottom: auto !important
+
+@media screen and (min-width: $laptop-min-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}b#{$separator}#{$key}
+      bottom: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}b#{$separator}#{$i * 5}\%
+      bottom: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}b#{$separator}auto
+    bottom: auto !important
+
+@media screen and (max-width: $tablet-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}b#{$separator}#{$key}
+      bottom: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}b#{$separator}#{$i * 5}\%
+      bottom: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}b#{$separator}auto
+    bottom: auto !important
+
+@media screen and (min-width: $desktop-min-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}b#{$separator}#{$key}
+      bottom: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}b#{$separator}#{$i * 5}\%
+      bottom: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}b#{$separator}auto
+    bottom: auto !important
+
+

@@ -1,0 +1,374 @@
+@use "./../abstracts/" as *
+@use "sass:math"
+
+body
+  font-family: var(#{$variable-prefix}-sans-serif)
+
+p, .#{$class-prefix}p
+  line-height: 1.7rem
+  font-size: 1rem
+  letter-spacing: 0.055rem
+
+pre, code, .#{$class-prefix}code, .#{$class-prefix}pre
+  background-color: var(#{$variable-prefix}-light)
+  font-family:  var(#{$variable-prefix}-fira-code)
+
+.#{$class-prefix}ff#{$separator}sans#{$separator}serif
+  font-family: var(#{$variable-prefix}-sans-serif) !important
+
+.#{$class-prefix}ff#{$separator}sans#{$separator}serif#{$separator}alt
+  font-family: var(#{$variable-prefix}-sans-serif-alt) !important
+
+.#{$class-prefix}ff#{$separator}serif
+  font-family: var(#{$variable-prefix}-serif) !important
+
+.#{$class-prefix}ff#{$separator}fira#{$separator}code
+  font-family:  var(#{$variable-prefix}-pacifio) !important
+
+.#{$class-prefix}ff#{$separator}pacifio
+  font-family:  var(#{$variable-prefix}-pacifio) !important
+
+.#{$class-prefix}fs#{$separator}7xs
+  font-size: calc(var(#{$variable-prefix}-font-size) - 0.8rem) !important
+
+.#{$class-prefix}fs#{$separator}6xs
+  font-size: calc(var(#{$variable-prefix}-font-size) - 0.75rem) !important
+
+.#{$class-prefix}fs#{$separator}5xs
+  font-size: calc(var(#{$variable-prefix}-font-size) - 0.65rem) !important
+
+.#{$class-prefix}fs#{$separator}4xs
+  font-size: calc(var(#{$variable-prefix}-font-size) - 0.55rem) !important
+
+.#{$class-prefix}fs#{$separator}3xs
+  font-size: calc(var(#{$variable-prefix}-font-size) - 0.45rem) !important
+
+.#{$class-prefix}fs#{$separator}2xs
+  font-size: calc(var(#{$variable-prefix}-font-size) - 0.35rem) !important
+
+.#{$class-prefix}fs#{$separator}xs
+  font-size: calc(var(#{$variable-prefix}-font-size) - 0.25rem) !important
+
+.#{$class-prefix}fs#{$separator}sm
+  font-size: calc(var(#{$variable-prefix}-font-size) - 0.15rem) !important
+
+.#{$class-prefix}fs#{$separator}md
+  font-size: var(#{$variable-prefix}-font-size) !important
+
+.#{$class-prefix}fs#{$separator}lg
+  font-size: calc(var(#{$variable-prefix}-font-size) + 0.25rem) !important
+
+.#{$class-prefix}fs#{$separator}xl
+  font-size: calc(var(#{$variable-prefix}-font-size) + 0.5rem) !important
+
+.#{$class-prefix}fs#{$separator}2xl
+  font-size: calc(var(#{$variable-prefix}-font-size) + 0.75rem) !important
+
+.#{$class-prefix}fs#{$separator}3xl
+  font-size: calc(var(#{$variable-prefix}-font-size) + 1rem) !important
+
+.#{$class-prefix}fs#{$separator}4xl
+  font-size: calc(var(#{$variable-prefix}-font-size) + 1.25rem) !important
+
+.#{$class-prefix}fs#{$separator}5xl
+  font-size: calc(var(#{$variable-prefix}-font-size) + 1.5rem) !important
+
+.#{$class-prefix}fs#{$separator}6xl
+  font-size: calc(var(#{$variable-prefix}-font-size) + 2rem) !important
+
+.#{$class-prefix}fs#{$separator}7xl
+  font-size: calc(var(#{$variable-prefix}-font-size) + 3rem) !important
+
+@for $index from 1 to 41
+  .#{$class-prefix}fs#{$separator}#{$index * 25}\%
+    font-size: #{$index * 25%} !important
+
+@for $index from 1 to 11
+  .#{$class-prefix}fw#{$separator}#{$index * 100}
+    font-weight: #{$index * 100} !important
+
+.#{$class-prefix}fw#{$separator}normal
+  font-weight: normal !important
+
+.#{$class-prefix}fw#{$separator}bold
+  font-weight: bold !important
+
+.#{$class-prefix}fv#{$separator}normal
+  font-variant: normal !important
+
+.#{$class-prefix}fv#{$separator}small#{$separator}caps
+  font-variant: small-caps !important
+
+.#{$class-prefix}ta#{$separator}left
+  text-align: left !important
+
+.#{$class-prefix}ta#{$separator}center
+  text-align: center !important
+
+.#{$class-prefix}ta#{$separator}right
+  text-align: right !important
+
+.#{$class-prefix}ta#{$separator}justify
+  text-align: justify !important
+
+.#{$class-prefix}tt#{$separator}uppercase
+  text-transform: uppercase !important
+
+.#{$class-prefix}tt#{$separator}lowercase
+  text-transform: lowercase !important
+
+.#{$class-prefix}tt#{$separator}capitalize
+  text-transform: capitalize !important
+
+.#{$class-prefix}td#{$separator}underline
+  text-decoration: underline !important
+
+.#{$class-prefix}td#{$separator}line#{$separator}through
+  text-decoration: line-through !important
+
+.#{$class-prefix}td#{$separator}none
+  text-decoration: none !important
+
+.#{$class-prefix}td#{$separator}overline
+  text-decoration: overline !important
+
+.#{$class-prefix}td#{$separator}none
+  text-decoration: none !important
+
+.#{$class-prefix}td#{$separator}line#{$separator}through
+  text-decoration: line-through !important
+
+.#{$class-prefix}td#{$separator}underline
+  text-decoration: underline !important
+
+.#{$class-prefix}tshdw#{$separator}7xl
+  box-shadow: var(#{$variable-prefix}-text-shadow-7xl)
+
+.#{$class-prefix}tshdw#{$separator}6xl
+  box-shadow: var(#{$variable-prefix}-text-shadow-6xl)
+
+.#{$class-prefix}tshdw#{$separator}5xl
+  box-shadow: var(#{$variable-prefix}-text-shadow-5xl)
+
+.#{$class-prefix}tshdw#{$separator}4xl
+  box-shadow: var(#{$variable-prefix}-text-shadow-4xl)
+
+.#{$class-prefix}tshdw#{$separator}3xl
+  box-shadow: var(#{$variable-prefix}-text-shadow-3xl)
+
+.#{$class-prefix}tshdw#{$separator}2xl
+  box-shadow: var(#{$variable-prefix}-text-shadow-2xl)
+
+.#{$class-prefix}tshdw#{$separator}xl
+  box-shadow: var(#{$variable-prefix}-text-shadow-xl)
+
+.#{$class-prefix}tshdw#{$separator}lg
+  box-shadow: var(#{$variable-prefix}-text-shadow-lg)
+
+.#{$class-prefix}tshdw, .#{$class-prefix}tshdw#{$separator}md
+  box-shadow: var(#{$variable-prefix}-text-shadow-md)
+
+.#{$class-prefix}tshdw#{$separator}lg
+  box-shadow: var(#{$variable-prefix}-text-shadow-lg)
+
+.#{$class-prefix}tshdw#{$separator}xl
+  box-shadow: var(#{$variable-prefix}-text-shadow-xl)
+
+.#{$class-prefix}tshdw#{$separator}2xl
+  box-shadow: var(#{$variable-prefix}-text-shadow-2xl)
+
+.#{$class-prefix}tshdw#{$separator}3xl
+  box-shadow: var(#{$variable-prefix}-text-shadow-3xl)
+
+.#{$class-prefix}tshdw#{$separator}4xl
+  box-shadow: var(#{$variable-prefix}-text-shadow-4xl)
+
+.#{$class-prefix}tshdw#{$separator}5xl
+  box-shadow: var(#{$variable-prefix}-text-shadow-5xl)
+
+.#{$class-prefix}tshdw#{$separator}6xl
+  box-shadow: var(#{$variable-prefix}-text-shadow-6xl)
+
+.#{$class-prefix}tshdw#{$separator}7xl
+  box-shadow: var(#{$variable-prefix}-text-shadow-7xl)
+
+.#{$class-prefix}tshdw#{$separator}7xl#{$separator}\:hvr:hover
+  box-shadow: var(#{$variable-prefix}-text-shadow-7xl)
+
+.#{$class-prefix}tshdw#{$separator}6xl#{$separator}\:hvr:hover
+  box-shadow: var(#{$variable-prefix}-text-shadow-6xl)
+
+.#{$class-prefix}tshdw#{$separator}5xl#{$separator}\:hvr:hover
+  box-shadow: var(#{$variable-prefix}-text-shadow-5xl)
+
+.#{$class-prefix}tshdw#{$separator}4xl#{$separator}\:hvr:hover
+  box-shadow: var(#{$variable-prefix}-text-shadow-4xl)
+
+.#{$class-prefix}tshdw#{$separator}3xl#{$separator}\:hvr:hover
+  box-shadow: var(#{$variable-prefix}-text-shadow-3xl)
+
+.#{$class-prefix}tshdw#{$separator}2xl#{$separator}\:hvr:hover
+  box-shadow: var(#{$variable-prefix}-text-shadow-2xl)
+
+.#{$class-prefix}tshdw#{$separator}xl#{$separator}\:hvr:hover
+  box-shadow: var(#{$variable-prefix}-text-shadow-xl)
+
+.#{$class-prefix}tshdw#{$separator}lg#{$separator}\:hvr:hover
+  box-shadow: var(#{$variable-prefix}-text-shadow-lg)
+
+.#{$class-prefix}tshdw#{$separator}\:hvr:hover, .#{$class-prefix}tshdw#{$separator}md#{$separator}\:hvr:hover
+  box-shadow: var(#{$variable-prefix}-text-shadow-md)
+
+.#{$class-prefix}tshdw#{$separator}lg#{$separator}\:hvr:hover
+  box-shadow: var(#{$variable-prefix}-text-shadow-lg)
+
+.#{$class-prefix}tshdw#{$separator}xl#{$separator}\:hvr:hover
+  box-shadow: var(#{$variable-prefix}-text-shadow-xl)
+
+.#{$class-prefix}tshdw#{$separator}2xl#{$separator}\:hvr:hover
+  box-shadow: var(#{$variable-prefix}-text-shadow-2xl)
+
+.#{$class-prefix}tshdw#{$separator}3xl#{$separator}\:hvr:hover
+  box-shadow: var(#{$variable-prefix}-text-shadow-3xl)
+
+.#{$class-prefix}tshdw#{$separator}4xl#{$separator}\:hvr:hover
+  box-shadow: var(#{$variable-prefix}-text-shadow-4xl)
+
+.#{$class-prefix}tshdw#{$separator}5xl#{$separator}\:hvr:hover
+  box-shadow: var(#{$variable-prefix}-text-shadow-5xl)
+
+.#{$class-prefix}tshdw#{$separator}6xl#{$separator}\:hvr:hover
+  box-shadow: var(#{$variable-prefix}-text-shadow-6xl)
+
+.#{$class-prefix}tshdw#{$separator}7xl#{$separator}\:hvr:hover
+  box-shadow: var(#{$variable-prefix}-text-shadow-7xl)
+
+.#{$class-prefix}tshdw#{$separator}7xl#{$separator}\:fcs:focus
+  box-shadow: var(#{$variable-prefix}-text-shadow-7xl)
+
+.#{$class-prefix}tshdw#{$separator}6xl#{$separator}\:fcs:focus
+  box-shadow: var(#{$variable-prefix}-text-shadow-6xl)
+
+.#{$class-prefix}tshdw#{$separator}5xl#{$separator}\:fcs:focus
+  box-shadow: var(#{$variable-prefix}-text-shadow-5xl)
+
+.#{$class-prefix}tshdw#{$separator}4xl#{$separator}\:fcs:focus
+  box-shadow: var(#{$variable-prefix}-text-shadow-4xl)
+
+.#{$class-prefix}tshdw#{$separator}3xl#{$separator}\:fcs:focus
+  box-shadow: var(#{$variable-prefix}-text-shadow-3xl)
+
+.#{$class-prefix}tshdw#{$separator}2xl#{$separator}\:fcs:focus
+  box-shadow: var(#{$variable-prefix}-text-shadow-2xl)
+
+.#{$class-prefix}tshdw#{$separator}xl#{$separator}\:fcs:focus
+  box-shadow: var(#{$variable-prefix}-text-shadow-xl)
+
+.#{$class-prefix}tshdw#{$separator}lg#{$separator}\:fcs:focus
+  box-shadow: var(#{$variable-prefix}-text-shadow-lg)
+
+.#{$class-prefix}tshdw#{$separator}\:fcs:focus, .#{$class-prefix}tshdw#{$separator}md#{$separator}\:fcs:focus
+  box-shadow: var(#{$variable-prefix}-text-shadow-md)
+
+.#{$class-prefix}tshdw#{$separator}lg#{$separator}\:fcs:focus
+  box-shadow: var(#{$variable-prefix}-text-shadow-lg)
+
+.#{$class-prefix}tshdw#{$separator}xl#{$separator}\:fcs:focus
+  box-shadow: var(#{$variable-prefix}-text-shadow-xl)
+
+.#{$class-prefix}tshdw#{$separator}2xl#{$separator}\:fcs:focus
+  box-shadow: var(#{$variable-prefix}-text-shadow-2xl)
+
+.#{$class-prefix}tshdw#{$separator}3xl#{$separator}\:fcs:focus
+  box-shadow: var(#{$variable-prefix}-text-shadow-3xl)
+
+.#{$class-prefix}tshdw#{$separator}4xl#{$separator}\:fcs:focus
+  box-shadow: var(#{$variable-prefix}-text-shadow-4xl)
+
+.#{$class-prefix}tshdw#{$separator}5xl#{$separator}\:fcs:focus
+  box-shadow: var(#{$variable-prefix}-text-shadow-5xl)
+
+.#{$class-prefix}tshdw#{$separator}6xl#{$separator}\:fcs:focus
+  box-shadow: var(#{$variable-prefix}-text-shadow-6xl)
+
+.#{$class-prefix}tshdw#{$separator}7xl#{$separator}\:fcs:focus
+  box-shadow: var(#{$variable-prefix}-text-shadow-7xl)
+
+.#{$class-prefix}t#{$separator}link
+  cursor: pointer
+
+.#{$class-prefix}t#{$separator}link:hover
+  text-decoration: underline
+  transition: text-decoration 0.5s ease
+
+.#{$class-prefix}t#{$separator}truncate
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  width: 100%
+
+.#{$class-prefix}ltr#{$separator}sp#{$separator}normal
+  letter-spacing: normal !important
+
+@for $index from 1 to 16
+  .#{$class-prefix}ltr#{$separator}sp#{$separator}#{$index}
+    letter-spacing: #{math.div($index,10)}px !important
+
+.#{$class-prefix}lb#{$separator}auto
+  line-break: auto !important
+
+.#{$class-prefix}lb#{$separator}loose
+  line-break: loose !important
+
+.#{$class-prefix}lb#{$separator}normal
+  line-break: normal !important
+
+.#{$class-prefix}lb#{$separator}strict
+  line-break: strict !important
+
+.#{$class-prefix}lb#{$separator}anywhere
+  line-break: anywhere !important
+
+.#{$class-prefix}lh#{$separator}normal
+  line-height: normal !important
+
+@for $index from 1 to 21
+  .#{$class-prefix}lh#{$separator}#{$index * 10}\%
+    line-height: #{$index * 10}rem !important
+
+.#{$class-prefix}ws#{$separator}normal
+  white-space: normal !important
+
+.#{$class-prefix}ws#{$separator}nowrap
+  white-space: nowrap !important
+
+.#{$class-prefix}ws#{$separator}pre
+  white-space: pre !important
+
+.#{$class-prefix}ws#{$separator}pre#{$separator}wrap
+  white-space: pre-wrap !important
+
+.#{$class-prefix}ws#{$separator}pre#{$separator}line
+  white-space: pre-line !important
+
+.#{$class-prefix}wos#{$separator}break#{$separator}spaces
+  white-space: break-spaces !important
+
+.#{$class-prefix}wob#{$separator}normal
+  word-break: normal !important
+
+.#{$class-prefix}wob#{$separator}break#{$separator}all
+  word-break: break-all !important
+
+.#{$class-prefix}wob#{$separator}keep#{$separator}all
+  word-break: keep-all !important
+
+.#{$class-prefix}wob#{$separator}break#{$separator}word
+  word-break: break-word !important
+
+.#{$class-prefix}magazine#{$separator}p::first-letter
+  font-size: 400%
+  float: left
+  margin-top: 1rem
+  margin-right: 0.2rem
+

@@ -1,0 +1,23 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}msg
+  background-color: var(#{$variable-prefix}-light)
+
+  & .#{$class-prefix}msg#{$separator}wrapper
+    @if $enable-padding == true
+      padding: 1rem .8rem
+
+    & .#{$class-prefix}msg#{$separator}title
+      font-weight: inherit
+      font-size: 1.3rem
+      margin-bottom: 0.5rem
+
+    & .#{$class-prefix}msg#{$separator}subtitle
+      font-weight: inherit
+      font-size: 1.2rem
+      margin-bottom: 0.4rem
+
+    & .#{$class-prefix}msg#{$separator}text
+      font-size: inherit
+      margin-bottom: 0.4rem
+

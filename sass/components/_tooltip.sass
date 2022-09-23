@@ -1,0 +1,18 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}tooltip
+  position: absolute
+  visibility: hidden
+  z-index: 200
+  font-size: 80%
+  background-color: var(#{$variable-prefix}-light)
+  border-radius: 0.15rem
+  bottom: 4rem
+  @if $enable-padding == true
+    padding: 0.3rem 0.8rem
+
+*:hover > .#{$class-prefix}tooltip
+  visibility: visible
+
+.#{$class-prefix}tooltip.#{$class-prefix}tooltip#{$separator}showing
+  visibility: visible
