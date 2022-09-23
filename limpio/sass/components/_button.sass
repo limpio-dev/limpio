@@ -1,0 +1,102 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}btn
+  border: $dark solid 0.1rem
+  border-radius: var(#{$variable-prefix}-button-border-radius)
+  cursor: pointer
+  text-align: center
+  @if $enable-padding == true
+    padding: 0.35rem 2.5rem
+
+  &.#{$class-prefix}btn#{$separator}7xs
+    font-size: calc(var(#{$variable-prefix}-font-size) - 0.8rem)
+
+  &.#{$class-prefix}btn#{$separator}6xs
+    font-size: calc(var(#{$variable-prefix}-font-size) - 0.75rem)
+
+  &.#{$class-prefix}btn#{$separator}5xs
+    font-size: calc(var(#{$variable-prefix}-font-size) - 0.65rem)
+
+  &.#{$class-prefix}btn#{$separator}4xs
+    font-size: calc(var(#{$variable-prefix}-font-size) - 0.55rem)
+
+  &.#{$class-prefix}btn#{$separator}3xs
+    font-size: calc(var(#{$variable-prefix}-font-size) - 0.45rem)
+
+  &.#{$class-prefix}btn#{$separator}2xs
+    font-size: calc(var(#{$variable-prefix}-font-size) - 0.35rem)
+
+  &.#{$class-prefix}btn#{$separator}xs
+    font-size: calc(var(#{$variable-prefix}-font-size) - 0.25rem)
+
+  &.#{$class-prefix}btn#{$separator}sm
+    font-size: calc(var(#{$variable-prefix}-font-size) - 0.15rem)
+
+  &.#{$class-prefix}btn#{$separator}md
+    font-size: var(#{$variable-prefix}-font-size)
+
+  &.#{$class-prefix}btn#{$separator}lg
+    font-size: calc(var(#{$variable-prefix}-font-size) + 0.25rem)
+
+  &.#{$class-prefix}btn#{$separator}xl
+    font-size: calc(var(#{$variable-prefix}-font-size) + 0.5rem)
+
+  &.#{$class-prefix}btn#{$separator}2xl
+    font-size: calc(var(#{$variable-prefix}-font-size) + 0.75rem)
+
+  &.#{$class-prefix}btn#{$separator}3xl
+    font-size: calc(var(#{$variable-prefix}-font-size) + 1rem)
+
+  &.#{$class-prefix}btn#{$separator}4xl
+    font-size: calc(var(#{$variable-prefix}-font-size) + 1.25rem)
+
+  &.#{$class-prefix}btn#{$separator}5xl
+    font-size: calc(var(#{$variable-prefix}-font-size) + 1.5rem)
+
+  &.#{$class-prefix}btn#{$separator}6xl
+    font-size: calc(var(#{$variable-prefix}-font-size) + 2rem)
+
+  &.#{$class-prefix}btn#{$separator}7xl
+    font-size: calc(var(#{$variable-prefix}-font-size) + 3rem)
+
+  &.#{$class-prefix}btn#{$separator}full#{$separator}width
+    width: 100% !important
+
+.#{$class-prefix}btn#{$separator}floating
+  display: inline-block
+  position: relative
+  overflow: hidden
+  z-index: 1
+  width: 2.5rem
+  height: 2.5rem
+  line-height: 2.5rem
+  padding: 0
+  cursor: pointer
+  vertical-align: middle
+
+.#{$class-prefix}btn#{$separator}floating:before
+  border-radius: 0
+
+.#{$class-prefix}btn#{$separator}floating i
+  display: inline-block
+  text-align: center
+  line-height: 2.5rem
+
+.#{$class-prefix}btn#{$separator}floating.#{$class-prefix}btn#{$separator}square
+  border-radius: 5px
+
+.#{$class-prefix}btn#{$separator}floating.#{$class-prefix}btn#{$separator}cirlce
+  border-radius: 50%
+
+.#{$class-prefix}btn#{$separator}pagination
+  @if $enable-padding == true
+    padding: 0.5rem 0.9rem
+
+.#{$class-prefix}btn#{$separator}link:hover
+  text-decoration: underline
+  -webkit-transition: -webkit-text-decoration 0.5s ease
+  transition: -webkit-text-decoration 0.5s ease
+  transition: text-decoration 0.5s ease
+  transition: text-decoration 0.5s ease, -webkit-text-decoration 0.5s ease
+
+

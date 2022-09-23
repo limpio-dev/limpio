@@ -1,0 +1,145 @@
+@use "./../abstracts/" as *
+
+@for $i from 1 to 13
+  .#{$class-prefix}gtc#{$separator}#{$i}
+    grid-template-columns: repeat(#{$i}, 1fr) !important
+
+@each $key, $value in $value-props
+  .#{$class-prefix}gg#{$separator}#{$key}
+    grid-gap: $value !important
+
+  .#{$class-prefix}gcg#{$separator}#{$key}
+    grid-column-gap: $value !important
+
+  .#{$class-prefix}grg#{$separator}#{$key}
+    grid-row-gap: $value !important
+
+@media screen and (min-width: $mobile-min-width) and (max-width: $mobile-max-width)
+
+  @for $i from 1 to 13
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}gtc#{$separator}#{$i}
+      grid-template-columns: repeat(#{$i}, 1fr) !important
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}gg#{$separator}#{$key}
+      grid-gap: $value !important
+
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}gcg#{$separator}#{$key}
+      grid-column-gap: $value !important
+
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}grg#{$separator}#{$key}
+      grid-row-gap: $value !important
+
+@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width)
+
+  @for $i from 1 to 13
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}gtc#{$separator}#{$i}
+      grid-template-columns: repeat(#{$i}, 1fr) !important
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}gg#{$separator}#{$key}
+      grid-gap: $value !important
+
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}gcg#{$separator}#{$key}
+      grid-column-gap: $value !important
+
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}grg#{$separator}#{$key}
+      grid-row-gap: $value !important
+
+@media screen and (min-width: $tablet-min-width)
+
+  @for $i from 1 to 13
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}gtc#{$separator}#{$i}
+      grid-template-columns: repeat(#{$i}, 1fr) !important
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}gg#{$separator}#{$key}
+      grid-gap: $value !important
+
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}gcg#{$separator}#{$key}
+      grid-column-gap: $value !important
+
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}grg#{$separator}#{$key}
+      grid-row-gap: $value !important
+
+@media screen and (max-width: $tablet-max-width)
+
+  @for $i from 1 to 13
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}gtc#{$separator}#{$i}
+      grid-template-columns: repeat(#{$i}, 1fr) !important
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}gg#{$separator}#{$key}
+      grid-gap: $value !important
+
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}gcg#{$separator}#{$key}
+      grid-column-gap: $value !important
+
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}grg#{$separator}#{$key}
+      grid-row-gap: $value !important
+
+@media screen and (min-width: $laptop-min-width) and (max-width: $laptop-max-width)
+
+  @for $i from 1 to 13
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}gtc#{$separator}#{$i}
+      grid-template-columns: repeat(#{$i}, 1fr) !important
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}gg#{$separator}#{$key}
+      grid-gap: $value !important
+
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}gcg#{$separator}#{$key}
+      grid-column-gap: $value !important
+
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}grg#{$separator}#{$key}
+      grid-row-gap: $value !important
+
+@media screen and (min-width: $laptop-min-width)
+
+  @for $i from 1 to 13
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}gtc#{$separator}#{$i}
+      grid-template-columns: repeat(#{$i}, 1fr) !important
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}gg#{$separator}#{$key}
+      grid-gap: $value !important
+
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}gcg#{$separator}#{$key}
+      grid-column-gap: $value !important
+
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}grg#{$separator}#{$key}
+      grid-row-gap: $value !important
+
+@media screen and (max-width: $laptop-max-width)
+
+  @for $i from 1 to 13
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}gtc#{$separator}#{$i}
+      grid-template-columns: repeat(#{$i}, 1fr) !important
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}gg#{$separator}#{$key}
+      grid-gap: $value !important
+
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}gcg#{$separator}#{$key}
+      grid-column-gap: $value !important
+
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}grg#{$separator}#{$key}
+      grid-row-gap: $value !important
+
+@media screen and (min-width: $desktop-min-width)
+
+  @for $i from 1 to 13
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}gtc#{$separator}#{$i}
+      grid-template-columns: repeat(#{$i}, 1fr) !important
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}gg#{$separator}#{$key}
+      grid-gap: $value !important
+
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}gcg#{$separator}#{$key}
+      grid-column-gap: $value !important
+
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}grg#{$separator}#{$key}
+      grid-row-gap: $value !important
+
+

@@ -1,0 +1,231 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}d#{$separator}block
+  display: block !important
+
+.#{$class-prefix}d#{$separator}none
+  display: none !important
+
+.#{$class-prefix}d#{$separator}grid
+  display: grid !important
+
+.#{$class-prefix}d#{$separator}inline
+  display: inline !important
+
+.#{$class-prefix}d#{$separator}inline#{$separator}block
+  display: inline-block !important
+
+.#{$class-prefix}d#{$separator}inline#{$separator}flex
+  display: inline-flex !important
+
+.#{$class-prefix}d#{$separator}table
+  display: table !important
+
+.#{$class-prefix}d#{$separator}flex
+  @include flex
+
+@media screen and (min-width: $mobile-min-width) and (max-width: $mobile-max-width)
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}d#{$separator}inline
+    display: inline !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}d#{$separator}none
+    display: none !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}d#{$separator}grid
+    display: grid !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}d#{$separator}inline
+    display: inline !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}d#{$separator}inline#{$separator}block
+    display: inline-block !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}d#{$separator}inline#{$separator}flex
+    display: inline-flex !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}d#{$separator}table
+    display: table !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}d#{$separator}flex
+    @include flex
+
+@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width)
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}d#{$separator}inline
+    display: inline !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}d#{$separator}none
+    display: none !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}d#{$separator}grid
+    display: grid !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}d#{$separator}inline
+    display: inline !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}d#{$separator}inline#{$separator}block
+    display: inline-block !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}d#{$separator}inline#{$separator}flex
+    display: inline-flex !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}d#{$separator}table
+    display: table !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}d#{$separator}flex
+    @include flex
+
+@media screen and (min-width: $tablet-min-width)
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}d#{$separator}inline
+    display: inline !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}d#{$separator}none
+    display: none !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}d#{$separator}grid
+    display: grid !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}d#{$separator}inline
+    display: inline !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}d#{$separator}inline#{$separator}block
+    display: inline-block !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}d#{$separator}inline#{$separator}flex
+    display: inline-flex !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}d#{$separator}table
+    display: table !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}d#{$separator}flex
+    @include flex
+
+@media screen and (max-width: $tablet-max-width)
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}d#{$separator}inline
+    display: inline !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}d#{$separator}none
+    display: none !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}d#{$separator}grid
+    display: grid !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}d#{$separator}inline
+    display: inline !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}d#{$separator}inline#{$separator}block
+    display: inline-block !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}d#{$separator}inline#{$separator}flex
+    display: inline-flex !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}d#{$separator}table
+    display: table !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}d#{$separator}flex
+    @include flex
+
+@media screen and (min-width: $laptop-min-width) and (max-width: $laptop-max-width)
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}d#{$separator}inline
+    display: inline !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}d#{$separator}none
+    display: none !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}d#{$separator}grid
+    display: grid !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}d#{$separator}inline
+    display: inline !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}d#{$separator}inline#{$separator}block
+    display: inline-block !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}d#{$separator}inline#{$separator}flex
+    display: inline-flex !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}d#{$separator}table
+    display: table !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}d#{$separator}flex
+    @include flex
+
+@media screen and (min-width: $laptop-min-width)
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}d#{$separator}inline
+    display: inline !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}d#{$separator}none
+    display: none !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}d#{$separator}grid
+    display: grid !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}d#{$separator}inline
+    display: inline !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}d#{$separator}inline#{$separator}block
+    display: inline-block !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}d#{$separator}inline#{$separator}flex
+    display: inline-flex !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}d#{$separator}table
+    display: table !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}d#{$separator}flex
+    @include flex
+
+@media screen and (max-width: $laptop-max-width)
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}d#{$separator}inline
+    display: inline !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}d#{$separator}none
+    display: none !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}d#{$separator}grid
+    display: grid !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}d#{$separator}inline
+    display: inline !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}d#{$separator}inline#{$separator}block
+    display: inline-block !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}d#{$separator}inline#{$separator}flex
+    display: inline-flex !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}d#{$separator}table
+    display: table !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}d#{$separator}flex
+    @include flex
+
+@media screen and (min-width: $desktop-min-width)
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}d#{$separator}inline
+    display: inline !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}d#{$separator}none
+    display: none !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}d#{$separator}grid
+    display: grid !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}d#{$separator}inline
+    display: inline !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}d#{$separator}inline#{$separator}block
+    display: inline-block !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}d#{$separator}inline#{$separator}flex
+    display: inline-flex !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}d#{$separator}table
+    display: table !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}d#{$separator}flex
+    @include flex
+
+

@@ -1,0 +1,11 @@
+@use "./../abstracts/" as *
+@use "sass:math"
+
+.#{$class-prefix}row
+  @include flex
+  @include flex-wrap
+
+@for $i from 1 through 12
+  .#{$class-prefix}col#{$separator}#{$i}
+    width: calc(100% * math.div($i, 12)) !important
+

@@ -1,0 +1,8 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}list
+  position: relative
+
+  & .#{$class-prefix}list#{$separator}item
+    @if $enable-padding == true
+      padding: 0.35rem 1rem

@@ -1,0 +1,119 @@
+@use "./../abstracts/" as *
+@use "sass:math"
+@use "sass:string"
+
+@each $key, $value in $value-props
+  .#{$class-prefix}r#{$separator}#{$key}
+    right: $value !important
+
+@for $i from 1 through 30
+  .#{$class-prefix}r#{$separator}#{$i * 5}\%
+    right: #{$i * 5} + '%' !important
+
+.#{$class-prefix}r#{$separator}auto
+  right: auto !important
+
+@media screen and (min-width: $mobile-min-width) and (max-width: $mobile-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}r#{$separator}#{$key}
+      right: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}r#{$separator}#{$i * 5}\%
+      right: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}r#{$separator}auto
+    right: auto !important
+
+@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}r#{$separator}#{$key}
+      right: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}r#{$separator}#{$i * 5}\%
+      right: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}r#{$separator}auto
+    right: auto !important
+
+@media screen and (min-width: $tablet-min-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}r#{$separator}#{$key}
+      right: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}r#{$separator}#{$i * 5}\%
+      right: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}r#{$separator}auto
+    right: auto !important
+
+@media screen and (max-width: $tablet-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}r#{$separator}#{$key}
+      right: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}r#{$separator}#{$i * 5}\%
+      right: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}r#{$separator}auto
+    right: auto !important
+
+@media screen and (min-width: $laptop-min-width) and (max-width: $laptop-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}r#{$separator}#{$key}
+      right: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}r#{$separator}#{$i * 5}\%
+      right: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}r#{$separator}auto
+    right: auto !important
+
+@media screen and (min-width: $laptop-min-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}r#{$separator}#{$key}
+      right: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}r#{$separator}#{$i * 5}\%
+      right: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}r#{$separator}auto
+    right: auto !important
+
+@media screen and (max-width: $laptop-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}r#{$separator}#{$key}
+      right: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}r#{$separator}#{$i * 5}\%
+      right: #{$i * 5} + '%' !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}r#{$separator}auto
+    right: auto !important
+
+@media screen and (min-width: $desktop-min-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}r#{$separator}#{$key}
+      right: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}r#{$separator}#{$i * 5}\%
+      right: #{$i * 5} + '%' !important
+
+.#{$class-prefix}#{$desktop-prefix}#{$separator}r#{$separator}auto
+  right: auto !important
+

@@ -1,0 +1,62 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}parallax
+  background-attachment: fixed !important
+  background-position: center !important
+  background-repeat: no-repeat !important
+
+@media screen and (min-width: $mobile-min-width) and (max-width: $mobile-max-width)
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}parallax
+    background-attachment: fixed !important
+    background-position: center !important
+    background-repeat: no-repeat !important
+    background-size: cover !important
+
+@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width)
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}parallax
+    background-attachment: fixed !important
+    background-position: center !important
+    background-repeat: no-repeat !important
+    background-size: cover !important
+
+@media screen and (min-width: $tablet-min-width)
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}parallax
+    background-attachment: fixed !important
+    background-position: center !important
+    background-repeat: no-repeat !important
+    background-size: cover !important
+
+@media screen and (max-width: $tablet-max-width)
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}parallax
+    background-attachment: fixed !important
+    background-position: center !important
+    background-repeat: no-repeat !important
+    background-size: cover !important
+
+@media screen and (min-width: $laptop-min-width) and (max-width: $laptop-max-width)
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}parallax
+    background-attachment: fixed !important
+    background-position: center !important
+    background-repeat: no-repeat !important
+    background-size: cover !important
+
+@media screen and (min-width: $laptop-min-width)
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}parallax
+    background-attachment: fixed !important
+    background-position: center !important
+    background-repeat: no-repeat !important
+    background-size: cover !important
+
+@media screen and (max-width: $laptop-max-width)
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}parallax
+    background-attachment: fixed !important
+    background-position: center !important
+    background-repeat: no-repeat !important
+    background-size: cover !important
+
+@media screen and (min-width: $desktop-min-width)
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}parallax
+    background-attachment: fixed !important
+    background-position: center !important
+    background-repeat: no-repeat !important
+    background-size: cover !important

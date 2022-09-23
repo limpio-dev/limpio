@@ -1,0 +1,14 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}toggler
+  position: absolute
+  font-weight: 900
+  font-size: 3rem
+  right: 0.8rem
+  top: 0.6rem
+  font-size: calc(24rem / 16rem)
+  cursor: pointer
+  content: "x"
+
+.#{$class-prefix}toggler:hover
+  color: var(#{$variable-prefix}-error)

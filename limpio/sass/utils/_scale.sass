@@ -1,0 +1,121 @@
+@use "./../abstracts/" as *
+@use "sass:string"
+@use "sass:math"
+
+
+@for $i from 1 through 30
+
+  .#{$class-prefix}scl#{$separator}#{$i * 5}\%
+    transform: scale(#{$i * 5} + '%') !important
+
+  .#{$class-prefix}scly#{$separator}#{$i * 5}\%
+    transform: scale(#{$i * 5} + '%') !important
+
+  .#{$class-prefix}sclx#{$separator}#{$i * 5}\%
+    transform: scale(#{$i * 5} + '%') !important
+
+@media screen and (min-width: $mobile-min-width) and (max-width: $mobile-max-width)
+
+  @for $i from 1 through 30
+
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}scl#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}scly#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}sclx#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width)
+
+  @for $i from 1 through 30
+
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}scl#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}scly#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}sclx#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+@media screen and (min-width: $tablet-min-width)
+
+  @for $i from 1 through 30
+
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}scl#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}scly#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}sclx#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+@media screen and (max-width: $tablet-max-width)
+
+  @for $i from 1 through 30
+
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}scl#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}scly#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}sclx#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+@media screen and (min-width: $laptop-min-width) and (max-width: $laptop-max-width)
+
+  @for $i from 1 through 30
+
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}scl#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}scly#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}sclx#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+@media screen and (min-width: $laptop-min-width)
+
+  @for $i from 1 through 30
+
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}scl#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}scly#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}sclx#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+@media screen and (max-width: $laptop-max-width)
+
+  @for $i from 1 through 30
+
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}scl#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}scly#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}sclx#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+@media screen and (min-width: $desktop-min-width)
+
+  @for $i from 1 through 30
+
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}scl#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}scly#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}sclx#{$separator}#{$i * 5}\%
+      transform: scale(#{$i * 5} + '%') !important
+
+

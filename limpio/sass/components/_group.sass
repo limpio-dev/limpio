@@ -1,0 +1,11 @@
+@use "./../abstracts/" as *
+.#{$class-prefix}group
+  position: relative
+  @include flex
+  @include flex-wrap
+  vertical-align: middle
+  align-items: stretch
+
+  & .#{$class-prefix}group#{$separator}item
+    margin-bottom: 0
+

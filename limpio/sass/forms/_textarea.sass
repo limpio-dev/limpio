@@ -1,0 +1,10 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}textarea
+  border: 1.7px solid var(#{$variable-prefix}-border-color)
+  transition: border-color 0.5s ease-in
+  @if $enable-padding == true
+    padding: 0.8rem
+
+  &#{$class-prefix}textarea#{$separator}full#{$separator}width
+    width: 100% !important

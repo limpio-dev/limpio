@@ -1,0 +1,156 @@
+@use "./../abstracts/" as *
+@use "sass:math"
+@use "sass:string"
+
+@each $key, $value in $value-props
+  .#{$class-prefix}mih#{$separator}#{$key}
+    min-height: $value !important
+
+@for $i from 1 through 30
+  .#{$class-prefix}mih#{$separator}#{$i * 5}\%
+    min-height: #{$i * 5} + '%' !important
+
+@for $i from 1 to 41
+  .#{$class-prefix}mih#{$separator}#{$i * 5}vh
+    min-height: #{$i * 5}vh !important
+
+.#{$class-prefix}mih#{$separator}auto
+  min-height: auto !important
+
+@media screen and (min-width: $mobile-min-width) and (max-width: $mobile-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}mih#{$separator}#{$key}
+      min-height: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}mih#{$separator}#{$i * 5}\%
+      min-height: #{$i * 5} + '%' !important
+
+  @for $i from 1 to 41
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}mih#{$separator}#{$i * 5}vh
+      min-height: #{$i * 5}vh !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}mih#{$separator}auto
+    min-height: auto !important
+
+@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}mih#{$separator}#{$key}
+      min-height: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}mih#{$separator}#{$i * 5}\%
+      min-height: #{$i * 5} + '%' !important
+
+  @for $i from 1 to 41
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}mih#{$separator}#{$i * 5}vh
+      min-height: #{$i * 5}vh !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}mih#{$separator}auto
+    min-height: auto !important
+
+@media screen and (min-width: $tablet-min-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}mih#{$separator}#{$key}
+      min-height: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}mih#{$separator}#{$i * 5}\%
+      min-height: #{$i * 5} + '%' !important
+
+  @for $i from 1 to 41
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}mih#{$separator}#{$i * 5}vh
+      min-height: #{$i * 5}vh !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}mih#{$separator}auto
+    min-height: auto !important
+
+@media screen and (max-width: $tablet-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}mih#{$separator}#{$key}
+      min-height: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}mih#{$separator}#{$i * 5}\%
+      min-height: #{$i * 5} + '%' !important
+
+  @for $i from 1 to 41
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}mih#{$separator}#{$i * 5}vh
+      min-height: #{$i * 5}vh !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}mih#{$separator}auto
+    min-height: auto !important
+
+@media screen and (min-width: $laptop-min-width) and (max-width: $laptop-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}mih#{$separator}#{$key}
+      min-height: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}mih#{$separator}#{$i * 5}\%
+      min-height: #{$i * 5} + '%' !important
+
+  @for $i from 1 to 41
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}mih#{$separator}#{$i * 5}vh
+      min-height: #{$i * 5}vh !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}mih#{$separator}auto
+    min-height: auto !important
+
+@media screen and (min-width: $laptop-min-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}mih#{$separator}#{$key}
+      min-height: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}mih#{$separator}#{$i * 5}\%
+      min-height: #{$i * 5} + '%' !important
+
+  @for $i from 1 to 41
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}mih#{$separator}#{$i * 5}vh
+      min-height: #{$i * 5}vh !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}mih#{$separator}auto
+    min-height: auto !important
+
+@media screen and (max-width: $laptop-max-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}mih#{$separator}#{$key}
+      min-height: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}mih#{$separator}#{$i * 5}\%
+      min-height: #{$i * 5} + '%' !important
+
+  @for $i from 1 to 41
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}mih#{$separator}#{$i * 5}vh
+      min-height: #{$i * 5}vh !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}mih#{$separator}auto
+    min-height: auto !important
+
+@media screen and (min-width: $desktop-min-width)
+
+  @each $key, $value in $value-props
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}mih#{$separator}#{$key}
+      min-height: $value !important
+
+  @for $i from 1 through 30
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}mih#{$separator}#{$i * 5}\%
+      min-height: #{$i * 5} + '%' !important
+
+  @for $i from 1 to 41
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}mih#{$separator}#{$i * 5}vh
+      min-height: #{$i * 5}vh !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}mih#{$separator}auto
+    min-height: auto !important
+
+

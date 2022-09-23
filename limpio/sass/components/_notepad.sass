@@ -1,0 +1,13 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}notepad
+  border-left: 0.6rem solid var(#{$variable-prefix}-border-color)
+  border-top-left-radius: 0.7rem
+  border-bottom-left-radius: 0.7rem
+  min-height: 3em
+  @if $enable-padding == true
+    padding: 1rem .8rem
+
+  & .#{$class-prefix}notepad#{$separator}text
+    font-weight: inherit
+

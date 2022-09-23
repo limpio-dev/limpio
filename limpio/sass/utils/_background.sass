@@ -1,0 +1,93 @@
+@use "./../abstracts/" as *
+
+@each $color in $color-list
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}
+    background-color: var(#{$variable-prefix}-#{$color})
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}1
+    background-color: var(#{$variable-prefix}-#{$color}-ltn-1)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}2
+    background-color: var(#{$variable-prefix}-#{$color}-ltn-2)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}3
+    background-color: var(#{$variable-prefix}-#{$color}-ltn-3)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}4
+    background-color: var(#{$variable-prefix}-#{$color}-ltn-4)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}1
+    background-color: var(#{$variable-prefix}-#{$color}-dkn-1)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}2
+    background-color: var(#{$variable-prefix}-#{$color}-dkn-2)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}3
+    background-color: var(#{$variable-prefix}-#{$color}-dkn-w)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}4
+    background-color: var(#{$variable-prefix}-#{$color}-dkn-3)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}\:hvr:hover
+    background-color: var(#{$variable-prefix}-#{$color})
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}1\:hvr:hover
+    background-color: var(#{$variable-prefix}-#{$color}-ltn-1)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}2\:hvr:hover
+    background-color: var(#{$variable-prefix}-#{$color}-ltn-2)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}3\:hvr:hover
+    background-color: var(#{$variable-prefix}-#{$color}-ltn-3)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}4\:hvr:hover
+    background-color: var(#{$variable-prefix}-#{$color}-ltn-4)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}1\:hvr:hover
+    background-color: var(#{$variable-prefix}-#{$color}-dkn-1)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}2\:hvr:hover
+    background-color: var(#{$variable-prefix}-#{$color}-dkn-2)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}3\:hvr:hover
+    background-color: var(#{$variable-prefix}-#{$color}-dkn-w)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}4\:hvr:hover
+    background-color: var(#{$variable-prefix}-#{$color}-dkn-4)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}\:fcs:focus
+    background-color: var(#{$variable-prefix}-#{$color})
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}1\:fcs:focus
+    background-color: var(#{$variable-prefix}-#{$color}-ltn-1)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}2\:fcs:focus
+    background-color: var(#{$variable-prefix}-#{$color}-ltn-2)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}3\:fcs:focus
+    background-color: var(#{$variable-prefix}-#{$color}-ltn-3)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}ltn#{$separator}4\:fcs:focus
+    background-color: var(#{$variable-prefix}-#{$color}-ltn-4)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}1\:fcs:focus
+    background-color: var(#{$variable-prefix}-#{$color}-dkn-1)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}2\:fcs:focus
+    background-color: var(#{$variable-prefix}-#{$color}-dkn-2)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}3\:fcs:focus
+    background-color: var(#{$variable-prefix}-#{$color}-dkn-w)
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}#{$separator}dkn#{$separator}4\:fcs:focus
+    background-color: var(#{$variable-prefix}-#{$color}-dkn-3)
+
+@each $color in $brands
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}
+    background-color: var(#{$variable-prefix}-#{$color})
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}\:hvr:hover
+    background-color: var(#{$variable-prefix}-#{$color})
+
+  .#{$class-prefix}bgc#{$separator}#{'' + $color}\:fcs:focus
+    background-color: var(#{$variable-prefix}-#{$color})

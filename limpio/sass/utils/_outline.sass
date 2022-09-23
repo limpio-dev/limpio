@@ -1,0 +1,6 @@
+@use "./../abstracts/" as *
+
+@each $color in $color-list
+  .#{$class-prefix}otl#{$separator}#{'' + $color}
+    @include outline($color)
+

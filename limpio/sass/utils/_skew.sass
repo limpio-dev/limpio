@@ -1,0 +1,9 @@
+@use "./../abstracts/" as *
+
+@for $index from 1 to 25
+  .#{$class-prefix}skewy#{$separator}#{$index * 15}deg
+    transform: skewY(#{$index * 15}deg) !important
+
+  .#{$class-prefix}skewx#{$separator}#{$index * 15}deg
+    transform: skewY(#{$index * 15}deg) !important
+

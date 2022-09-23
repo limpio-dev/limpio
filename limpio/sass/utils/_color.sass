@@ -1,0 +1,93 @@
+@use "./../abstracts/" as *
+
+@each $color in $color-list
+  .#{$class-prefix}c#{$separator}#{'' + $color}
+    color: var(#{$variable-prefix}-#{$color})
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}ltn#{$separator}1
+    color: var(#{$variable-prefix}-#{$color}-ltn-1)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}ltn#{$separator}2
+    color: var(#{$variable-prefix}-#{$color}-ltn-2)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}ltn#{$separator}3
+    color: var(#{$variable-prefix}-#{$color}-ltn-3)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}ltn#{$separator}4
+    color: var(#{$variable-prefix}-#{$color}-ltn-4)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}dkn#{$separator}1
+    color: var(#{$variable-prefix}-#{$color}-dkn-1)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}dkn#{$separator}2
+    color: var(#{$variable-prefix}-#{$color}-dkn-2)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}dkn#{$separator}3
+    color: var(#{$variable-prefix}-#{$color}-dkn-w)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}dkn#{$separator}4
+    color: var(#{$variable-prefix}-#{$color}-dkn-3)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}\:hvr:hover
+    color: var(#{$variable-prefix}-#{$color})
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}ltn#{$separator}1\:hvr:hover
+    color: var(#{$variable-prefix}-#{$color}-ltn-1)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}ltn#{$separator}2\:hvr:hover
+    color: var(#{$variable-prefix}-#{$color}-ltn-2)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}ltn#{$separator}3\:hvr:hover
+    color: var(#{$variable-prefix}-#{$color}-ltn-3)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}ltn#{$separator}4\:hvr:hover
+    color: var(#{$variable-prefix}-#{$color}-ltn-4)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}dkn#{$separator}1\:hvr:hover
+    color: var(#{$variable-prefix}-#{$color}-dkn-1)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}dkn#{$separator}2\:hvr:hover
+    color: var(#{$variable-prefix}-#{$color}-dkn-2)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}dkn#{$separator}3\:hvr:hover
+    color: var(#{$variable-prefix}-#{$color}-dkn-w)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}dkn#{$separator}4\:hvr:hover
+    color: var(#{$variable-prefix}-#{$color}-dkn-4)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}\:fcs:focus
+    color: var(#{$variable-prefix}-#{$color})
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}ltn#{$separator}1\:fcs:focus
+    color: var(#{$variable-prefix}-#{$color}-ltn-1)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}ltn#{$separator}2\:fcs:focus
+    color: var(#{$variable-prefix}-#{$color}-ltn-2)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}ltn#{$separator}3\:fcs:focus
+    color: var(#{$variable-prefix}-#{$color}-ltn-3)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}ltn#{$separator}4\:fcs:focus
+    color: var(#{$variable-prefix}-#{$color}-ltn-4)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}dkn#{$separator}1\:fcs:focus
+    color: var(#{$variable-prefix}-#{$color}-dkn-1)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}dkn#{$separator}2\:fcs:focus
+    color: var(#{$variable-prefix}-#{$color}-dkn-2)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}dkn#{$separator}3\:fcs:focus
+    color: var(#{$variable-prefix}-#{$color}-dkn-w)
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}#{$separator}dkn#{$separator}4\:fcs:focus
+    color: var(#{$variable-prefix}-#{$color}-dkn-3)
+
+@each $color in $brands
+  .#{$class-prefix}c#{$separator}#{'' + $color}
+    color: var(#{$variable-prefix}-#{$color})
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}\:hvr:hover
+    color: var(#{$variable-prefix}-#{$color})
+
+  .#{$class-prefix}c#{$separator}#{'' + $color}\:fcs:focus
+    color: var(#{$variable-prefix}-#{$color})

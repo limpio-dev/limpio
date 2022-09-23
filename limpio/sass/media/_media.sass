@@ -1,0 +1,16 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}img, .#{$class-prefix}video, .#{$class-prefix}img#{$separator}thumb, .#{$class-prefix}thumb
+  height: auto
+  width: auto
+
+.#{$class-prefix}img#{$separator}responsive, .#{$class-prefix}video#{$separator}responsive
+  height: auto
+  width: 100%
+
+.#{$class-prefix}img#{$separator}circle
+  border-radius: 50%
+
+.#{$class-prefix}img#{$separator}oval
+  border-radius: 30%
+

@@ -1,0 +1,792 @@
+@use "./../abstracts/" as *
+
+.#{$class-prefix}flx#{$separator}wrap
+  @include flex-wrap
+
+.#{$class-prefix}flx#{$separator}wrap#{$separator}reverse
+  flex-wrap: wrap-reverse !important
+
+.#{$class-prefix}flx#{$separator}row
+  flex-direction: row !important
+
+.#{$class-prefix}flx#{$separator}col
+  flex-direction: column !important
+
+.#{$class-prefix}flx#{$separator}row#{$separator}reverse
+  @include flex-direction-row-reverse
+
+.#{$class-prefix}flx#{$separator}col#{$separator}reverse
+  flex-direction: column-reverse !important
+
+.#{$class-prefix}jc#{$separator}flex#{$separator}start
+  justify-content: flex-start !important
+
+.#{$class-prefix}jc#{$separator}center
+  justify-content: center !important
+
+.#{$class-prefix}jc#{$separator}flex#{$separator}end
+  justify-content: flex-end !important
+
+.#{$class-prefix}jc#{$separator}space#{$separator}between
+  justify-content: space-between !important
+
+.#{$class-prefix}jc#{$separator}space#{$separator}around
+  justify-content: space-around !important
+
+.#{$class-prefix}jc#{$separator}space#{$separator}evenly
+  justify-content: space-evenly !important
+
+.#{$class-prefix}js#{$separator}auto
+  justify-self: auto !important
+
+.#{$class-prefix}js#{$separator}start
+  justify-self: start !important
+
+.#{$class-prefix}js#{$separator}center
+  justify-self: center !important
+
+.#{$class-prefix}js#{$separator}end
+  justify-self: end !important
+
+.#{$class-prefix}js#{$separator}stretch
+  justify-self: stretch !important
+
+.#{$class-prefix}ai#{$separator}start
+  align-items: start !important
+
+.#{$class-prefix}ai#{$separator}center
+  align-items: center !important
+
+.#{$class-prefix}ai#{$separator}end
+  align-items: end !important
+
+.#{$class-prefix}ai#{$separator}flex#{$separator}start
+  align-items: flex-start !important
+
+.#{$class-prefix}ai#{$separator}flex#{$separator}end
+  align-items: flex-end !important
+
+.#{$class-prefix}as#{$separator}start
+  align-self: start !important
+
+.#{$class-prefix}as#{$separator}center
+  align-self: center !important
+
+.#{$class-prefix}as#{$separator}end
+  align-self: end !important
+
+.#{$class-prefix}as#{$separator}flex#{$separator}start
+  align-self: flex-start !important
+
+.#{$class-prefix}as#{$separator}flex#{$separator}end
+  align-self: flex-end !important
+
+@for $index from 1 to 13
+
+  .#{$class-prefix}ord#{$separator}#{$index}
+    order: $index !important
+
+@media screen and (max-width: $mobile-max-width)
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}flx#{$separator}wrap
+    @include flex-wrap
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}flx#{$separator}wrap#{$separator}reverse
+    flex-wrap: wrap-reverse !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}flx#{$separator}row
+    flex-direction: row !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}flx#{$separator}col
+    flex-direction: column !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}flx#{$separator}row#{$separator}reverse
+    @include flex-direction-row-reverse
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}flx#{$separator}col#{$separator}reverse
+    flex-direction: column-reverse !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}jc#{$separator}flex#{$separator}start
+    justify-content: flex-start !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}jc#{$separator}center
+    justify-content: center !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}jc#{$separator}flex#{$separator}end
+    justify-content: flex-end !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}jc#{$separator}space#{$separator}between
+    justify-content: space-between !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}jc#{$separator}space#{$separator}around
+    justify-content: space-around !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}jc#{$separator}space#{$separator}evenly
+    justify-content: space-evenly !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}js#{$separator}auto
+    justify-self: auto !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}js#{$separator}start
+    justify-self: start !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}js#{$separator}center
+    justify-self: center !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}js#{$separator}end
+    justify-self: end !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}js#{$separator}stretch
+    justify-self: stretch !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}ai#{$separator}start
+    align-items: start !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}ai#{$separator}center
+    align-items: center !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}ai#{$separator}end
+    align-items: end !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}ai#{$separator}flex#{$separator}start
+    align-items: flex-start !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}ai#{$separator}flex#{$separator}end
+    align-items: flex-end !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}as#{$separator}start
+    align-self: start !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}as#{$separator}center
+    align-self: center !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}as#{$separator}end
+    align-self: end !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}as#{$separator}flex#{$separator}start
+    align-self: flex-start !important
+
+  .#{$class-prefix}#{$mobile-prefix}#{$separator}as#{$separator}flex#{$separator}end
+    align-self: flex-end !important
+
+  @for $index from 1 to 13
+
+    .#{$class-prefix}#{$mobile-prefix}#{$separator}ord#{$separator}#{$index}
+      order: $index !important
+
+@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width)
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}flx#{$separator}wrap
+    @include flex-wrap
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}flx#{$separator}wrap#{$separator}reverse
+    flex-wrap: wrap-reverse !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}flx#{$separator}row
+    flex-direction: row !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}flx#{$separator}col
+    flex-direction: column !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}flx#{$separator}row#{$separator}reverse
+    @include flex-direction-row-reverse
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}flx#{$separator}col#{$separator}reverse
+    flex-direction: column-reverse !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}jc#{$separator}flex#{$separator}start
+    justify-content: flex-start !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}jc#{$separator}center
+    justify-content: center !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}jc#{$separator}flex#{$separator}end
+    justify-content: flex-end !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}jc#{$separator}space#{$separator}between
+    justify-content: space-between !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}jc#{$separator}space#{$separator}around
+    justify-content: space-around !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}jc#{$separator}space#{$separator}evenly
+    justify-content: space-evenly !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}js#{$separator}auto
+    justify-self: auto !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}js#{$separator}start
+    justify-self: start !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}js#{$separator}center
+    justify-self: center !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}js#{$separator}end
+    justify-self: end !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}js#{$separator}stretch
+    justify-self: stretch !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}ai#{$separator}start
+    align-items: start !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}ai#{$separator}center
+    align-items: center !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}ai#{$separator}end
+    align-items: end !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}ai#{$separator}flex#{$separator}start
+    align-items: flex-start !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}ai#{$separator}flex#{$separator}end
+    align-items: flex-end !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}as#{$separator}start
+    align-self: start !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}as#{$separator}center
+    align-self: center !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}as#{$separator}end
+    align-self: end !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}as#{$separator}flex#{$separator}start
+    align-self: flex-start !important
+
+  .#{$class-prefix}#{$tablet-prefix}#{$separator}as#{$separator}flex#{$separator}end
+    align-self: flex-end !important
+
+  @for $index from 1 to 13
+
+    .#{$class-prefix}#{$tablet-prefix}#{$separator}ord#{$separator}#{$index}
+      order: $index !important
+
+@media screen and (min-width: $tablet-min-width)
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}flx#{$separator}wrap
+    @include flex-wrap
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}flx#{$separator}wrap#{$separator}reverse
+    flex-wrap: wrap-reverse !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}flx#{$separator}row
+    flex-direction: row !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}flx#{$separator}col
+    flex-direction: column !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}flx#{$separator}row#{$separator}reverse
+    @include flex-direction-row-reverse
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}flx#{$separator}col#{$separator}reverse
+    flex-direction: column-reverse !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}jc#{$separator}flex#{$separator}start
+    justify-content: flex-start !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}jc#{$separator}center
+    justify-content: center !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}jc#{$separator}flex#{$separator}end
+    justify-content: flex-end !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}jc#{$separator}space#{$separator}between
+    justify-content: space-between !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}jc#{$separator}space#{$separator}around
+    justify-content: space-around !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}jc#{$separator}space#{$separator}evenly
+    justify-content: space-evenly !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}js#{$separator}auto
+    justify-self: auto !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}js#{$separator}start
+    justify-self: start !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}js#{$separator}center
+    justify-self: center !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}js#{$separator}end
+    justify-self: end !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}js#{$separator}stretch
+    justify-self: stretch !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}ai#{$separator}start
+    align-items: start !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}ai#{$separator}center
+    align-items: center !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}ai#{$separator}end
+    align-items: end !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}ai#{$separator}flex#{$separator}start
+    align-items: flex-start !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}ai#{$separator}flex#{$separator}end
+    align-items: flex-end !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}as#{$separator}start
+    align-self: start !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}as#{$separator}center
+    align-self: center !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}as#{$separator}end
+    align-self: end !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}as#{$separator}flex#{$separator}start
+    align-self: flex-start !important
+
+  .#{$class-prefix}#{$tablet-up-prefix}#{$separator}as#{$separator}flex#{$separator}end
+    align-self: flex-end !important
+
+  @for $index from 1 to 13
+
+    .#{$class-prefix}#{$tablet-up-prefix}#{$separator}ord#{$separator}#{$index}
+      order: $index !important
+
+@media screen and (max-width: $tablet-max-width)
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}flx#{$separator}wrap
+    @include flex-wrap
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}flx#{$separator}wrap#{$separator}reverse
+    flex-wrap: wrap-reverse !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}flx#{$separator}row
+    flex-direction: row !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}flx#{$separator}col
+    flex-direction: column !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}flx#{$separator}row#{$separator}reverse
+    @include flex-direction-row-reverse
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}flx#{$separator}col#{$separator}reverse
+    flex-direction: column-reverse !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}jc#{$separator}flex#{$separator}start
+    justify-content: flex-start !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}jc#{$separator}center
+    justify-content: center !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}jc#{$separator}flex#{$separator}end
+    justify-content: flex-end !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}jc#{$separator}space#{$separator}between
+    justify-content: space-between !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}jc#{$separator}space#{$separator}around
+    justify-content: space-around !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}jc#{$separator}space#{$separator}evenly
+    justify-content: space-evenly !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}js#{$separator}auto
+    justify-self: auto !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}js#{$separator}start
+    justify-self: start !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}js#{$separator}center
+    justify-self: center !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}js#{$separator}end
+    justify-self: end !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}js#{$separator}stretch
+    justify-self: stretch !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}ai#{$separator}start
+    align-items: start !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}ai#{$separator}center
+    align-items: center !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}ai#{$separator}end
+    align-items: end !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}ai#{$separator}flex#{$separator}start
+    align-items: flex-start !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}ai#{$separator}flex#{$separator}end
+    align-items: flex-end !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}as#{$separator}start
+    align-self: start !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}as#{$separator}center
+    align-self: center !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}as#{$separator}end
+    align-self: end !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}as#{$separator}flex#{$separator}start
+    align-self: flex-start !important
+
+  .#{$class-prefix}#{$tablet-down-prefix}#{$separator}as#{$separator}flex#{$separator}end
+    align-self: flex-end !important
+
+  @for $index from 1 to 13
+
+    .#{$class-prefix}#{$tablet-down-prefix}#{$separator}ord#{$separator}#{$index}
+      order: $index !important
+
+@media screen and (min-width: $laptop-min-width) and (max-width: $laptop-max-width)
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}flx#{$separator}wrap
+    @include flex-wrap
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}flx#{$separator}wrap#{$separator}reverse
+    flex-wrap: wrap-reverse !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}flx#{$separator}row
+    flex-direction: row !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}flx#{$separator}col
+    flex-direction: column !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}flx#{$separator}row#{$separator}reverse
+    @include flex-direction-row-reverse
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}flx#{$separator}col#{$separator}reverse
+    flex-direction: column-reverse !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}jc#{$separator}flex#{$separator}start
+    justify-content: flex-start !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}jc#{$separator}center
+    justify-content: center !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}jc#{$separator}flex#{$separator}end
+    justify-content: flex-end !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}jc#{$separator}space#{$separator}between
+    justify-content: space-between !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}jc#{$separator}space#{$separator}around
+    justify-content: space-around !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}jc#{$separator}space#{$separator}evenly
+    justify-content: space-evenly !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}js#{$separator}auto
+    justify-self: auto !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}js#{$separator}start
+    justify-self: start !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}js#{$separator}center
+    justify-self: center !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}js#{$separator}end
+    justify-self: end !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}js#{$separator}stretch
+    justify-self: stretch !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}ai#{$separator}start
+    align-items: start !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}ai#{$separator}center
+    align-items: center !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}ai#{$separator}end
+    align-items: end !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}ai#{$separator}flex#{$separator}start
+    align-items: flex-start !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}ai#{$separator}flex#{$separator}end
+    align-items: flex-end !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}as#{$separator}start
+    align-self: start !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}as#{$separator}center
+    align-self: center !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}as#{$separator}end
+    align-self: end !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}as#{$separator}flex#{$separator}start
+    align-self: flex-start !important
+
+  .#{$class-prefix}#{$laptop-prefix}#{$separator}as#{$separator}flex#{$separator}end
+    align-self: flex-end !important
+
+  @for $index from 1 to 13
+
+    .#{$class-prefix}#{$laptop-prefix}#{$separator}ord#{$separator}#{$index}
+      order: $index !important
+
+@media screen and (min-width: $laptop-min-width)
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}flx#{$separator}wrap
+    @include flex-wrap
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}flx#{$separator}wrap#{$separator}reverse
+    flex-wrap: wrap-reverse !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}flx#{$separator}row
+    flex-direction: row !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}flx#{$separator}col
+    flex-direction: column !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}flx#{$separator}row#{$separator}reverse
+    @include flex-direction-row-reverse
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}flx#{$separator}col#{$separator}reverse
+    flex-direction: column-reverse !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}jc#{$separator}flex#{$separator}start
+    justify-content: flex-start !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}jc#{$separator}center
+    justify-content: center !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}jc#{$separator}flex#{$separator}end
+    justify-content: flex-end !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}jc#{$separator}space#{$separator}between
+    justify-content: space-between !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}jc#{$separator}space#{$separator}around
+    justify-content: space-around !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}jc#{$separator}space#{$separator}evenly
+    justify-content: space-evenly !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}js#{$separator}auto
+    justify-self: auto !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}js#{$separator}start
+    justify-self: start !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}js#{$separator}center
+    justify-self: center !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}js#{$separator}end
+    justify-self: end !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}js#{$separator}stretch
+    justify-self: stretch !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}ai#{$separator}start
+    align-items: start !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}ai#{$separator}center
+    align-items: center !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}ai#{$separator}end
+    align-items: end !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}ai#{$separator}flex#{$separator}start
+    align-items: flex-start !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}ai#{$separator}flex#{$separator}end
+    align-items: flex-end !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}as#{$separator}start
+    align-self: start !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}as#{$separator}center
+    align-self: center !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}as#{$separator}end
+    align-self: end !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}as#{$separator}flex#{$separator}start
+    align-self: flex-start !important
+
+  .#{$class-prefix}#{$laptop-up-prefix}#{$separator}as#{$separator}flex#{$separator}end
+    align-self: flex-end !important
+
+  @for $index from 1 to 13
+
+    .#{$class-prefix}#{$laptop-up-prefix}#{$separator}ord#{$separator}#{$index}
+      order: $index !important
+
+@media screen and (max-width: $laptop-max-width)
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}flx#{$separator}wrap
+    @include flex-wrap
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}flx#{$separator}wrap#{$separator}reverse
+    flex-wrap: wrap-reverse !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}flx#{$separator}row
+    flex-direction: row !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}flx#{$separator}col
+    flex-direction: column !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}flx#{$separator}row#{$separator}reverse
+    @include flex-direction-row-reverse
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}flx#{$separator}col#{$separator}reverse
+    flex-direction: column-reverse !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}jc#{$separator}flex#{$separator}start
+    justify-content: flex-start !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}jc#{$separator}center
+    justify-content: center !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}jc#{$separator}flex#{$separator}end
+    justify-content: flex-end !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}jc#{$separator}space#{$separator}between
+    justify-content: space-between !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}jc#{$separator}space#{$separator}around
+    justify-content: space-around !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}jc#{$separator}space#{$separator}evenly
+    justify-content: space-evenly !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}js#{$separator}auto
+    justify-self: auto !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}js#{$separator}start
+    justify-self: start !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}js#{$separator}center
+    justify-self: center !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}js#{$separator}end
+    justify-self: end !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}js#{$separator}stretch
+    justify-self: stretch !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}ai#{$separator}start
+    align-items: start !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}ai#{$separator}center
+    align-items: center !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}ai#{$separator}end
+    align-items: end !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}ai#{$separator}flex#{$separator}start
+    align-items: flex-start !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}ai#{$separator}flex#{$separator}end
+    align-items: flex-end !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}as#{$separator}start
+    align-self: start !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}as#{$separator}center
+    align-self: center !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}as#{$separator}end
+    align-self: end !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}as#{$separator}flex#{$separator}start
+    align-self: flex-start !important
+
+  .#{$class-prefix}#{$laptop-down-prefix}#{$separator}as#{$separator}flex#{$separator}end
+    align-self: flex-end !important
+
+  @for $index from 1 to 13
+
+    .#{$class-prefix}#{$laptop-down-prefix}#{$separator}ord#{$separator}#{$index}
+      order: $index !important
+
+@media screen and (min-width: $desktop-min-width)
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}flx#{$separator}wrap
+    @include flex-wrap
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}flx#{$separator}wrap#{$separator}reverse
+    flex-wrap: wrap-reverse !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}flx#{$separator}row
+    flex-direction: row !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}flx#{$separator}col
+    flex-direction: column !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}flx#{$separator}row#{$separator}reverse
+    @include flex-direction-row-reverse
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}flx#{$separator}col#{$separator}reverse
+    flex-direction: column-reverse !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}jc#{$separator}flex#{$separator}start
+    justify-content: flex-start !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}jc#{$separator}center
+    justify-content: center !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}jc#{$separator}flex#{$separator}end
+    justify-content: flex-end !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}jc#{$separator}space#{$separator}between
+    justify-content: space-between !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}jc#{$separator}space#{$separator}around
+    justify-content: space-around !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}jc#{$separator}space#{$separator}evenly
+    justify-content: space-evenly !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}js#{$separator}auto
+    justify-self: auto !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}js#{$separator}start
+    justify-self: start !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}js#{$separator}center
+    justify-self: center !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}js#{$separator}end
+    justify-self: end !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}js#{$separator}stretch
+    justify-self: stretch !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}ai#{$separator}start
+    align-items: start !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}ai#{$separator}center
+    align-items: center !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}ai#{$separator}end
+    align-items: end !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}ai#{$separator}flex#{$separator}start
+    align-items: flex-start !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}ai#{$separator}flex#{$separator}end
+    align-items: flex-end !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}as#{$separator}start
+    align-self: start !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}as#{$separator}center
+    align-self: center !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}as#{$separator}end
+    align-self: end !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}as#{$separator}flex#{$separator}start
+    align-self: flex-start !important
+
+  .#{$class-prefix}#{$desktop-prefix}#{$separator}as#{$separator}flex#{$separator}end
+    align-self: flex-end !important
+
+  @for $index from 1 to 13
+
+    .#{$class-prefix}#{$desktop-prefix}#{$separator}ord#{$separator}#{$index}
+      order: $index !important
+
